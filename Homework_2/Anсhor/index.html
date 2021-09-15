@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            /*Сделала специально маленькую ширину, чтобы было видно прокрутку*/
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        header,
+        footer {
+            background-color: rgb(167, 207, 241);
+        }
+
+        h2,
+        h3 {
+            padding: 20px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgb(85, 158, 158);
+            /*такой padding просто, чтоб визуально смотрелось*/
+            padding-bottom: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: coral;
+        }
+
+        .copyright {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2>Домашнее задание по теме якоря и ссылки</h2>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <h3>Адреса интернета</h3>
+            <ol>
+                <li><a href="about.html#intro">Введение</a></li>
+                <li><a href="about.html#universal">Универсальные идентификаторы</a></li>
+                <li><a href="about.html#ip-adress">Три основных класса IP-адресов</a></li>
+                <li><a href="about.html#connect">Адреса описывают сетевые соединения</a></li>
+                <li><a href="about.html#broadcast">Сетевые и широковещательные адреса</a></li>
+                <li><a href="about.html#restrict">Ограниченное широковещание</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; текст домашнего задания
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

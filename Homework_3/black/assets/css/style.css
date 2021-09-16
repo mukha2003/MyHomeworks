@@ -6,7 +6,7 @@
 
 body {
     background-color: #000;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -37,7 +37,7 @@ nav ul li a {
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 14px 25px;
+    padding: 12px 23px;
     font-weight: bold;
     font-size: 16px;
 }
@@ -53,7 +53,11 @@ nav ul li a:hover {
     padding-top: 88px;
 }
 
-h1 {
+.main-name a {
+    text-decoration: none;
+}
+
+h2 {
     color: #fff;
     font-size: 48px;
     letter-spacing: -3px;
@@ -83,16 +87,56 @@ main {
     color: #b40b6b;
     font-size: 28px;
     letter-spacing: -2px;
+    font-weight: normal;
 }
 
-.first-article {
-    padding: 24px 15px;
+article {
+    padding: 24px 24px 10px 16px;
+}
+
+
+.subheader {
+    font-size: 8px;
+    color: #b1abab;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.subheader span {
+    color: #770444;
+}
+
+article p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 24px;
+    color: #868d90;
+}
+
+.information {
+    padding: 28px 0 9px;
+}
+
+.information a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #770444;
+    padding-right: 17px;
+}
+
+.article-footer {
+    padding: 7px 17px;
+    background-color: #e0dede;
+    font-size: 9px;
+    color: #770444;
+    text-transform: uppercase;
 }
 
 .first-aside {
     width: 250px;
     float: left;
-    background-color: #f2f2f2;
+    background-color: #e0dede;
 }
 
 .second-aside {

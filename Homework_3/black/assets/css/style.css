@@ -15,9 +15,13 @@ body {
 }
 
 nav {
-    background-color: #bb0a6b;
+    background:-moz-linear-gradient(180deg, rgba(188, 9, 111, 1) 0%, rgba(140, 11, 68, 1) 100%); 
+    background:-webkit-linear-gradient(180deg, rgba(188, 9, 111, 1) 0%, rgba(140, 11, 68, 1) 100%);
+    background:-o-linear-gradient(180deg, rgba(188, 9, 111, 1) 0%, rgba(140, 11, 68, 1) 100%);
+    background:-ms-linear-gradient(180deg, rgba(188, 9, 111, 1) 0%, rgba(140, 11, 68, 1) 100%);
+    background:linear-gradient(180deg, rgba(188, 9, 111, 1) 0%, rgba(140, 11, 68, 1) 100%);
 }
-
+   
 nav ul {
     list-style: none;
     font-size: 0;
@@ -94,7 +98,6 @@ article {
     padding: 24px 24px 10px 16px;
 }
 
-
 .subheader {
     font-size: 8px;
     color: #b1abab;
@@ -127,16 +130,52 @@ article p {
 
 .article-footer {
     padding: 7px 17px;
-    background-color: #e0dede;
+    background-color: #f2f2f2;
     font-size: 9px;
-    color: #770444;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.article-footer span {
+    color: #770444;
 }
 
 .first-aside {
     width: 250px;
     float: left;
-    background-color: #e0dede;
+    background-color: #f2f2f2;
+    padding-left: 21px;
+    padding-right: 21px;
+    color: #868d90;
+    margin-bottom: 20px;
+}
+
+.first-aside h3 {
+    color: #bb086b;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 16px 0 24px;
+}
+
+.aside-section {
+    border-bottom: 1px solid #e6e8e8;
+    margin-bottom: 25px;
+}
+
+.aside-section h4 {
+    display: inline-block;
+    color: #fff;
+    background-color: #b40b6b;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 1px 13px;
+}
+
+.aside-section p {
+    font-size: 11px;
+    text-align: justify;
+    padding: 20px 0 30px;
+
 }
 
 .second-aside {

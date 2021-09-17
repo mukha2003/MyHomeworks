@@ -6,24 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Homeworks</title>
+    <style>
+        h1 {
+            text-transform: uppercase;
+            color: #262686;
+        }
+
+        .list-name {
+            text-transform: uppercase;
+            color: #ff6347;
+        }
+
+        .list-name li {
+            text-transform: none;
+        }
+
+        a:hover {
+            color: teal;
+        }
+    </style>
 </head>
 
 <body>
     <h1>My homeworks</h1>
-    <ul>
-        <li><a href="../MyHomeworks/Homework_1/index.html" target="_blank">Lesson_1</a></li>
-        <li>Lesson_2
+    <ul class="main-list">
+        <li class="list-name">Lesson_1
             <ul>
-                <li><a href="../MyHomeworks/Homework_2/List/index.html" target="_blank">Checkbox</a></li>
-                <li><a href="../MyHomeworks/Homework_2/Anchor/index.html" target="_blank">Anchor</a>
+                <li><a href="Homework_1/index.html" target="_blank">Resume</a></li>
+            </ul>
+        </li>
+        <li class="list-name">Lesson_2
+            <ul>
+                <li><a href="Homework_2/List/index.html" target="_blank">Checkbox</a></li>
+                <li><a href="Homework_2/Anchor/index.html" target="_blank">Anchor</a>
                 </li>
             </ul>
         </li>
-        <li>
+        <li class="list-name">
             Lesson_3
             <ul>
-                <li><a href="../MyHomeworks/Homework_3/green/index.html" target="_blank">Green</a></li>
-                <li><a href="../MyHomeworks/Homework_3/black/index.html" target="_blank">Black</a></li>
+                <li><a href="Homework_3/green/index.html" target="_blank">Green</a></li>
+                <li><a href="Homework_3/black/index.html" target="_blank">Black</a></li>
             </ul>
         </li>
     </ul>

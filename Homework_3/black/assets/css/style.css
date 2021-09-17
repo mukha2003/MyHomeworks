@@ -147,10 +147,11 @@ article p {
     padding-left: 21px;
     padding-right: 21px;
     color: #868d90;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
-.first-aside h3 {
+.first-aside h3,
+.second-aside h4 {
     color: #bb086b;
     text-transform: uppercase;
     font-size: 15px;
@@ -175,7 +176,6 @@ article p {
     font-size: 11px;
     text-align: justify;
     padding: 20px 0 30px;
-
 }
 
 .second-aside {
@@ -184,7 +184,42 @@ article p {
 }
 
 .second-aside ul {
-    padding-left: 20px ;
+    padding-left: 20px;
+    padding-bottom: 24px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.second-aside ul li a {
+    color: #bb086b;
+    text-decoration: none;
+    line-height: 21px;
+}
+
+.second-aside h4 {
+    padding-bottom: 15px;
+}
+
+.footer-text {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 38px 0;
+}
+
+.dot {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.foot {
+    display: inline-block;
+    background-color: #bb086b;
+    padding: 0 2px;
 }
 
 .clr {

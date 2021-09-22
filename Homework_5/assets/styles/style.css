@@ -84,7 +84,7 @@ footer {
     margin: 0 auto;
 }
 
-.footer_logo {
+.footer_logo img {
     display: block;
     margin: 0 auto 46px;
 }
@@ -102,19 +102,31 @@ footer {
 
 .icons {
     margin: 18px auto 75px;
-    width: 58%;
+    width: 71%;
 }
 
-.face_icon {
-    margin-right: 32px;
+.icons a {
+    display: inline-block;
+    width: 23%;
 }
 
-.twit_icon {
-    margin-right: 31px;
+.icons img {
+    display: block;
+    margin: 0 auto;
 }
+
+/* подгоняла кривые иконки под кривой макет просто ради интереса */
 
 .google_icon {
-    margin-right: 18px;
+    position: relative;
+    top: 2px;
+    left: 7px;
+}
+
+.world_icon {
+    position: relative;
+    top: 2px;
+    left: 2px;
 }
 
 .footer_copyright {
@@ -126,6 +138,4 @@ footer {
 .footer_copyright span {
     color: #00c7fc;
 }
-
-
 

@@ -43,6 +43,7 @@ ul {
 
 header {
     padding-top: 35px;
+    margin-bottom: 53px;
 }
 
 #logo {
@@ -83,7 +84,6 @@ header {
 
 .header_buttons {
     float: right;
-    margin-bottom: 53px;
 }
 
 .btn {

@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 90%;
-    min-width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
@@ -83,7 +83,7 @@ header {
 
 .header_buttons {
     float: right;
-    margin-bottom: 47px;
+    margin-bottom: 53px;
 }
 
 .btn {
@@ -126,7 +126,7 @@ header {
 
 .superpowers_text {
     float: left;
-    width: 40%;
+    width: 43%;
 }
 
 .superpowers_text h3 {
@@ -134,31 +134,36 @@ header {
     font-weight: 700;
     color: #2F281E;
     margin-bottom: 30px;
-    padding-top: 83px;
+    padding-top: 78px;
+    line-height: 54px;
 }
 
 .superpowers_text p {
-    width: 88%;
+    width: 93%;
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 45px;
+    margin-bottom: 56px;
 }
 
 .superpowers_image {
     float: right;
-    margin-bottom: 110px;
+    margin-bottom: 99px;
 }
 
 .bottom_btn {
     height: 53px;
     font-weight: 700;
     padding: 0 41px;
-    margin-right: 30px;
+    margin-right: 27px;
 }
 
 .triangle {
     display: inline-block;
     color: #f90
+}
+
+.triangle span {
+    margin-left: 6px;
 }
 
 .triangle span:hover {
@@ -167,7 +172,7 @@ header {
 }
 
 .tools_header {
-    width: 40%;
+    width: 42%;
     text-align: center;
     margin: 0 auto 54px;
 }

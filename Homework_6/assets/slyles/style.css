@@ -229,7 +229,7 @@ header {
 
 .btn-upper {
     display: block;
-    margin: 0 auto 210px;
+    margin: 0 auto 212px;
     height: 53px;
     padding: 0 33px;
     text-transform: uppercase;
@@ -242,7 +242,7 @@ header {
 
 .left_side {
     float: left;
-    width: 38%;
+    width: 44%;
 }
 
 .small_header {
@@ -253,13 +253,17 @@ header {
 }
 
 .left_side h4 {
-    margin-bottom: 22px;
+    margin: 3px 0 22px;
 }
 
 .left_side p {
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
+    margin-bottom: 26px;
+}
+
+.left_side p:first-of-type {
     margin-bottom: 30px;
 }
 
@@ -283,18 +287,19 @@ header {
 }
 
 .managers .right_part {
-    width: 38%;
+    width: 44%;
     float: right;
-    padding-top: 50px;
-    margin-right: 30px;
+    padding-top: 40px;
+    margin-right: -13px;
 }
 
 .managers .right_part h4 {
-    margin-bottom: 22px;   
+    margin: 3px 0 22px;   
 }
 
 .managers .right_part p {
     margin-bottom: 30px;
+    line-height: 26px;
 }
 
 .managers .right_part ul li {
@@ -309,7 +314,7 @@ header {
 }
 
 .managers {
-    margin-bottom: 104px;
+    margin-bottom: 86px;
 }
 
 .marketers .left_side {
@@ -318,7 +323,7 @@ header {
 
 .marketers_content {
     border-bottom: 1px solid #f2f2f2;
-    padding-bottom: 146px;
+    padding-bottom: 139px;
 }
 
 footer {
@@ -330,7 +335,7 @@ footer {
 }
 
 .footer_logo {
-    margin-bottom: 33px;
+    margin-bottom: 26px;
 }
 
 .disclaimer li,
@@ -344,7 +349,7 @@ input {
     width: 325px;
     height: 48px;
     border-color: #f2f2f2;
-    margin-bottom: 19px;
+    margin-bottom: 21px;
 }
 
 form {

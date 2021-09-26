@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    border: 24px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4a4f56;
+    color: #d7797d;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 22px;
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+
+.subheader {
+    font-size: 24px;
+    padding: 4px 0 21px;
+}
+
+main {
+    background-color: #3b3f45;
+    color: #fff;
+    font-size: 26px;
+    padding-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    padding-top: 38px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    display: block;
+    padding: 14px 0 13px;  
+}
+
+label:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #a1a0a7;
+    background-color: #fff;
+    margin: 0 13px 0 17px;
+    position: relative;
+    top: 2px;
+}
+
+li input[type=checkbox]:checked + label:before {
+    content: '✓';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #a1a0a7;
+    background-color: #fff;
+    margin: 0 13px 0 17px;
+    position: relative;
+    top: 2px;
+    color: #000;
+    text-align: center;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+li input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+}
+
+
+li {
+    background-color: #88839e;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all .2s ease-in;
+    box-sizing: border-box;
+}
+
+li label span {
+    font-size: 17px;
+    margin-left: 9px;
+    vertical-align: middle;
+    color: #c9c6d3;
+    letter-spacing: -0.5px;
+}
+
+li label span:before {
+    content: '(';
+    padding-right: 1px;
+}
+
+li label span:after {
+    content: ')';
+    padding-left: 1px;
+}
+
+li:nth-child(even) {
+    background-color: #7a7593;
+}
+
+li:hover {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    background-color: #625e77;
+}
+
+li:active {
+    background-color: #d7797d;
+}
+
+footer {
+    background-color: #3b3f45;
+    color: #d7797d;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.grey {
+    background-color: #4a4f56;
+    padding: 24px 0 24px
+}

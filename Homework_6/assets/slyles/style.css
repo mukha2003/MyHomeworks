@@ -303,7 +303,7 @@ header {
 }
 
 .managers .right_part ul li {
-    background: url(../images/listtick.png) left no-repeat;
+    background: url(../images/listtick.png) left no-repeat;            
     padding-left: 65px;
     width: 92%;
     margin-bottom: 30px;

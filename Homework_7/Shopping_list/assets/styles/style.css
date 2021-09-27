@@ -89,6 +89,11 @@ li input[type=checkbox]:checked + label:before {
 
 li input[type=checkbox]:checked + label {
     text-decoration: line-through;
+    color: #a39fb2;
+}
+
+li input[type=checkbox]:checked + label span {
+    color: #a39fb2;
 }
 
 

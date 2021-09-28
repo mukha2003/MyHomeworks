@@ -67,6 +67,7 @@ main {
     padding: 56px 27px 90px;
     background-color: #f7f7f7;
     color: #777;
+    transition: all .2s ease-in;
 }
 
 .card h3 {
@@ -89,7 +90,7 @@ main {
 }
 
 .card p {
-    line-height: 22px;
+    line-height: 23px;
     font-family: 'PT Sans', sans-serif;
     hyphens: auto;
 }

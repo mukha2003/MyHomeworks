@@ -96,7 +96,6 @@ li input[type=checkbox]:checked + label span {
     color: #a39fb2;
 }
 
-
 li {
     background-color: #88839e;
     border-bottom: 3px solid transparent;

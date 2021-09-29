@@ -52,20 +52,20 @@ ul {
     transition: all .2s ease-in;
 }
 
-ul:hover li .content{
+/* ul:hover li .content{
     opacity: 0.6;
 }
 
 ul:hover li .content:hover {
     opacity: 1;
     cursor: pointer;
-}
+} */
 
 /*оба способаg*/
 
-/* li .content:not(li .content:hover) {
+ul:hover li .content:not(li .content:hover) {
     opacity: 0.6;
-} */
+}
 
 li {
     display: inline-block;

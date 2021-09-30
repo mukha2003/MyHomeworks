@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fdde7e;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.main_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    flex-basis: calc(100% / 3 - 20px);
+}
+
+.card .card_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 442px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -7px #000;
+    padding: 30px 0 36px;
+}
+
+.main_wrapper .card:nth-child(2) .card_wrapper {
+    height: 500px;
+    padding: 41px 0 45px;
+}
+
+.card_wrapper li:first-child {
+    font-size: 70px;
+    color: #02995b;
+    font-family: 'miso-bold';
+}
+
+.card_wrapper li img {
+    padding-left: 20px;
+}
+
+.card_wrapper li:nth-child(3) {
+    font-size: 56px;
+    font-family: 'miso-regular';
+}
+
+.card_wrapper li:nth-child(4) {
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+}
+
+
+
+@font-face {
+    font-family: 'miso-regular';
+    src: url('../fonts/miso-regular.eot');
+    src: url(../fonts/miso-regular.woff) format('woff'),
+    url(../fonts/miso-regular.ttf) format('truetype');
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'miso-bold';
+    src: url('../fonts/miso-bold.eot');
+    src: url(../fonts/miso-bold.woff) format('woff'),
+    url(../fonts/miso-bold.ttf) format('truetype');
+    font-style: normal; 
+    font-weight: normal;
+}

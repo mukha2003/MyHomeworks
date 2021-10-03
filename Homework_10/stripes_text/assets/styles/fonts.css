@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: local('☺'), 
+	url('../fonts/Proxima Nova Regular.woff2') format('woff2'),
+	 url('../fonts/Proxima Nova Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* playfair-display-regular - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		 url('../fonts/playfair-display-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/playfair-display-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+	font-family: 'Futura PT';
+	src: local('☺'), 
+	url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+	 url('../fonts/FuturaPT-Bold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+

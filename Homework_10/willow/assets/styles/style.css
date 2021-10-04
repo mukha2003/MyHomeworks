@@ -28,7 +28,7 @@ body {
 }
 
 .text {  
-    padding: 132px 115px 0;
+    padding: 132px 135px 0 124px;
 }
 
 h2 {
@@ -44,19 +44,19 @@ p {
     font-size: 18px;
     font-weight: 400;
     line-height: 34px;
-    letter-spacing: 1.1px;
-    color: gray;
+    letter-spacing: .7px;
+    color: #aeaeae;
 }
 
 p:last-of-type {
-    margin-bottom: 42px;
+    margin-bottom: 39px;
 }
 
 .first:first-letter {
     font-size: 110px;
     float: left;
-    line-height: 88px;
-    padding-right: 33px;
+    line-height: 85px;
+    padding-right: 28px;
     color: #171717;
     font-family: 'Playfair Display', sans-serif;
 }
@@ -66,7 +66,7 @@ blockquote {
     font-size: 24px;
     padding-left: 51px;
     letter-spacing: 1px;
-    color: gray;
+    color: #aeaeae;
     font-weight: 400;
     position: relative;
     margin-bottom: 37px;

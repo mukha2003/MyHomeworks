@@ -27,12 +27,8 @@ body {
     margin-bottom: 300px;
 }
 
-.text {
-    width: 90%;
-    max-width: 1162px;
-    margin: 0 auto;
-    text-align: left;
-    padding-top: 138px;
+.text {  
+    padding: 132px 115px 0;
 }
 
 h2 {
@@ -40,15 +36,15 @@ h2 {
     font-size: 42px;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    letter-spacing: 1.4px;
+    letter-spacing: .6px;
 }
 
 p {
     margin-bottom: 34px;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 34px;
-    letter-spacing: 0.4px;
+    letter-spacing: 1.1px;
     color: gray;
 }
 
@@ -57,21 +53,21 @@ p:last-of-type {
 }
 
 .first:first-letter {
-    font-size: 103px;
+    font-size: 110px;
     float: left;
     line-height: 88px;
-    padding-right: 38px;
-    font-family: 'Lato', sans-serif;
+    padding-right: 33px;
     color: #171717;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 blockquote {
     font-style: italic;
     font-size: 24px;
     padding-left: 51px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     color: gray;
-    font-weight: 100;
+    font-weight: 400;
     position: relative;
     margin-bottom: 37px;
 }

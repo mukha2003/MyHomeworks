@@ -24,9 +24,11 @@ body {
 .main_content {
     box-shadow: 0 0 30px #e4e1e1;
     margin-top: 126px;
+    margin-bottom: 300px;
 }
 
 .text {
+    width: 90%;
     max-width: 1162px;
     margin: 0 auto;
     text-align: left;

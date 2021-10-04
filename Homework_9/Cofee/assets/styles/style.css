@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'miso-regular';
+    src: url('../fonts/miso-regular.woff2') format('woff2'),
+    url(../fonts/miso-regular.woff) format('woff');
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'miso-bold';
+
+    src: url('../fonts/miso-bold.woff2') format('woff2'),
+    url(../fonts/miso-bold.woff) format('woff'); 
+    font-style: normal; 
+    font-weight: bold;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -79,19 +97,3 @@ ul {
 
 
 
-@font-face {
-    font-family: 'miso-regular';
-    src: url('../fonts/miso-regular.woff2') format('woff2'),
-    url(../fonts/miso-regular.woff) format('woff');
-    font-style: normal; 
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'miso-bold';
-
-    src: url('../fonts/miso-bold.woff2') format('woff2'),
-    url(../fonts/miso-bold.woff) format('woff'); 
-    font-style: normal; 
-    font-weight: bold;
-}

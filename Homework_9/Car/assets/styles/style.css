@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'HansKendrick-Regular';
+    src: url('../fonts/HansKendrick-Regular.woff2') format('woff2'),
+    url('../fonts/HansKendrick-Regular.woff') format('woff');   
+    font-style: normal; 
+    font-weight: normal;   
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +24,10 @@ body {
 
 ul {
     list-style: none;
+}
+
+img {
+    vertical-align: top;
 }
 
 .container {
@@ -78,7 +90,8 @@ ul {
 }
 
 .big img {
-    vertical-align: bottom;
+    
+    width: 100%;
 }
 
 .gradient {
@@ -128,10 +141,3 @@ ul {
 
 
 
-@font-face {
-    font-family: 'HansKendrick-Regular';
-    src: url('../fonts/HansKendrick-Regular.woff2') format('woff2'),
-    url('../fonts/HansKendrick-Regular.woff') format('woff');   
-    font-style: normal; 
-    font-weight: normal;   
-}

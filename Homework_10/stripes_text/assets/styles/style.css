@@ -33,16 +33,20 @@ body {
     background-color: #464f54;
 }
 
+.title_block {
+    width: 69%;
+    position: absolute;
+    right: 0;
+    top: 49px;
+}
+
 .title {
     display: block;
     width: 100%;
     background-color: #181818;
     color: #767676;
-    padding: 50px 0 54px 64px;
-    margin-top: 50px;
-    position: absolute;
-    left: 450px;
-    top: 0px;
+    padding: 45px 0 48px 64px;
+    /* margin-top: 46px; */
 }
 
 label.title_name {
@@ -60,56 +64,21 @@ label.title_name {
     outline: none;
     border-bottom: 3px solid #767676;
     font-size: 48px;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
+    line-height: 55px;
     width: 100%;
 }
 
-/* .text_content {
-    background-color: #eeb62b;
-    padding-left: 20px;
-    position: absolute;
-    left: 550px;
-    top: 247px;
-    width: 100%;
-}
-
-.text_content ul {
-    font-size: 0;
-    padding: 10px;
-}
-
-.text_content ul li {
-    display: inline-block;
-
-}
-
-button {
-    padding: 10px;
-    background-color: inherit;
-    color: #fff; 
-    margin-right: 6px;  
-}
-
-button:hover i {
-    opacity: 1;
-}
-
-i {
-    font-size: 34px;
-    opacity: 0.6;
-} */
 .text_content {
     background-color: #eeb62b;
     padding-left: 20px;
-
-    position: absolute;
-    left: 550px;
-    top: 247px;
-    width: 100vw;
+    width: calc(100% - 64px);
+    margin-left: 64px;
 }
 
 .text_content ul {
     display: flex;
+    flex-wrap: wrap;
     justify-items: left;
     padding: 10px;
 }
@@ -118,7 +87,7 @@ button {
     padding: 10px;
     background-color: inherit;
     color: #fff; 
-    margin-right: 6px;  
+    margin-right: 7px;  
 }
 
 button:hover i {
@@ -126,16 +95,9 @@ button:hover i {
 }
 
 i {
-    font-size: 34px;
+    font-size: 33px;
     opacity: 0.6;
 } 
-
-
-
-
-
-
-
 
 .main_content {
     max-width: 920px;
@@ -179,9 +141,6 @@ i {
     margin-bottom: 22px;
     line-height: 40px;
 }
-
-
-
 
 .main_content p:last-child {
     padding-bottom: 40px;

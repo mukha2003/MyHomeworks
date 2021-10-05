@@ -42,7 +42,7 @@ h2 {
 p {
     margin-bottom: 34px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 34px;
     letter-spacing: .7px;
     color: #aeaeae;
@@ -67,7 +67,7 @@ blockquote {
     padding-left: 51px;
     letter-spacing: 1px;
     color: #aeaeae;
-    font-weight: 400;
+    font-weight: 300;
     position: relative;
     margin-bottom: 37px;
 }

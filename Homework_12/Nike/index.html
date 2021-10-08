@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/styles/style.min.css">   
+</head>
+
+<body class="body">
+    <div class="product-card">
+        <div class="content-main">
+            <div class="content-main__logo">
+                <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+            </div>
+            <div class="content-main__image">
+                <img src="assets/images/Nike-SB-Stefan-Janoski-Max@1X.png" alt="">
+            </div>
+            <div class="dots-row">
+                <div class="dots-row__dot dots-row__dot--grey"></div>
+                <div class="dots-row__dot dots-row__dot--white"></div>
+                <div class="dots-row__dot dots-row__dot--red"></div>
+                <div class="dots-row__dot dots-row__dot--blue"></div>
+            </div>
+        </div>
+
+        <div class="content-info">
+            <div class="info-item">
+                <div class="info-item__title">Nike SB Stefan Janoski Max</div>
+                <div class="info-item__descr">Unisex Skateboarding Shoe</div>
+                <div class="info-item-rating">
+                    <div class="info-item-rating__rating">
+                        <input class="info-item-rating__items" id="stars5" type="radio" name="stars" value="5">
+                        <label for="stars5" class="info-item-rating__label"></label>
+                        <input class="info-item-rating__items" id="stars4" type="radio" name="stars" value="4">
+                        <label for="stars4" class="info-item-rating__label"></label>
+                        <input class="info-item-rating__items" id="stars3" type="radio" name="stars" value="3" checked>
+                        <label for="stars3" class="info-item-rating__label"></label>
+                        <input class="info-item-rating__items" id="stars2" type="radio" name="stars" value="2">
+                        <label for="stars2" class="info-item-rating__label"></label>
+                        <input class="info-item-rating__items" id="stars1" type="radio" name="stars" value="1">
+                        <label for="stars1" class="info-item-rating__label"></label>
+                    </div>          
+                </div>
+                <div class="info-item__toggle">
+                    <div class="toggle-list__size">
+                        <select name="size" id="">
+                            <option value="40">Size</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>
+                    </div>
+                    <div class="toggle-list__qty">
+                        <select name="qty" id="">
+                            <option value="4">Qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="info-item__btn">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+    <script>
+        $(function() {  //когда документ будет готов
+            $('select').styler();  //для всех тегов <select> применить кастомную стилизацию с помощью плагина styler
+        });
+        </script>
+</body>
+
+</html>

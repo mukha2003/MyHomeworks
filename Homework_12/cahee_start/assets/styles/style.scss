@@ -14,6 +14,14 @@ body {
     height: 100%;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
 ul,
 ol {
     list-style: none;
@@ -21,4 +29,150 @@ ol {
 
 img {
     vertical-align: top;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main-content-fresh {
+    // background-color: #f9f8fb;
+    background: url(../images/image1.png) center center/cover no-repeat;
+}
+
+.fresh {
+    padding-top: 31px;
+    padding-bottom: 405px;
+    position: relative;
+}
+
+.fresh-header {
+    margin-bottom: 230px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link {
+        font-size: 50px;
+        font-family: 'Pacifico';
+        color: #262626;
+    }
+
+    &__nav-menu {
+        flex-basis: 47%;
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+
+            &__link {
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 700;
+                color: #262626;
+                padding-top: 6px;
+
+                &:hover {
+                    border-top: 3px solid #ff6033;
+                }
+            }
+        }
+    }
+}
+
+.fresh__aside {
+    width: calc(100% - 800px);
+    margin-bottom: 30px;
+}
+
+.aside {
+    &__title {
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 14px;
+
+        &--white {
+            color: #fff;
+        }
+
+        &--big {
+            font-size: 90px;
+            font-weight: 700;
+        }
+    }
+
+    &__descr {
+        font-size: 17px;
+        line-height: 26px;
+
+        &--white {
+            color: #fff;
+        }
+    }
+}
+
+.fresh-btn {
+    display: block;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 3px 5px #5f5d5d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+
+    &--orange {
+        background-color: #ff6033;
+
+    }
+
+    &:hover {
+        background-color: #f83e0a;
+    }
+}
+
+.mouse-scroll {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 70px;
+    left: 49%;
+}
+
+/* ---- About us -----*/
+
+.main-content-about {
+    background-color: #00b4b4;
+}
+
+.about {
+    padding: 70px 0 70px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &__image {
+        margin-left: 10px;
+    }
+
+    &__aside {
+        padding: 92px 0 0 95px;
+
+        .fresh-title {
+            margin-bottom: 7px;
+        }
+
+        .fresh-descr {
+            margin-bottom: 10px;
+        }
+    }
 }

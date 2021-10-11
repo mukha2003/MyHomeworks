@@ -261,13 +261,13 @@ img {
   background-color: #082b4e;
 }
 
-.contacts__title {
+.address__title {
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 3px;
 }
-.contacts__link {
+.address__link {
   display: block;
   color: #262626;
   margin-bottom: 12px;

@@ -348,13 +348,14 @@ img {
 .contact-form__button--blue:hover {
   background-color: #082b4e;
 }
-.contact-form .address__title {
+
+.address__title {
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 3px;
 }
-.contact-form .address__link {
+.address__link {
   display: block;
   color: #262626;
   margin-bottom: 12px;

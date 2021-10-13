@@ -146,13 +146,14 @@ img {
     height: 55px;
     text-align: center;
     border: none;
-    box-shadow: 0 3px 5px #5f5d5d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .fresh-btn {
@@ -322,47 +323,59 @@ img {
         gap: 15px;
     }
 
-    //пыталась сделать вместо плейсхолдера label и чтобы он отъезжал при фокусе, но не додумалась
-    // &__item {
-    //     position: relative;
-    // }
-
-    // &__label {
-    //     position: absolute;
-    //     color: #fff;
-    //     top: 16px;
-    //     left: 20px;
-    // }
+    //------- floating placeholder -----------
 
     &__input {
         width: 500px;
-        height: 50px;
+        border-width: 0;
+        color: #fff;
         background-color: #00c4c4;
         opacity: 0.5;
-        border: none;
         border-left: 5px solid transparent;
-        color: #fff;
-        font-family: 'Raleway', sans-serif;
-        padding-left: 20px;
-        transition: all .3s ease;
+        cursor: pointer;
 
-        &::placeholder {
-            color: #fff;
-            font-size: 15px;
-            font-family: 'Raleway', sans-serif;
+        &:hover {
+            opacity: 1;
         }
 
         &:focus {
-            outline: 0 none;
+            outline: 0;
+            box-shadow: 0;
+        }
 
-            &::placeholder {
-                color: transparent;
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border-left: 5px solid #355b82;
+            opacity: 1;
+            padding-top: 23px;
+
+            &+.contact-form__label {
+                transform: translate(1%, -25%) scale(.8);
             }
         }
 
-        &:hover {
-            border-left: 5px solid #355b82;
-            opacity: 1;
+        &,
+        &+.contact-form__label {
+            line-height: 1;
+            font: inherit;
+            padding: 1em 0.4em;
+            height: 3.1em;
+            position: relative;
+        }
+
+        &+.contact-form__label {
+            position: absolute;
+            // top: 0;
+            left: 10%;
+            user-select: none;
+            color: #fff;
+            transition: transform .25s ease-in-out;
+            transform-origin: 0 0;
+            opacity: .7;
         }
     }
 
@@ -378,30 +391,31 @@ img {
 
         &--blue {
             background-color: #114b85;
-            transition: all .3s ease;
+
 
             &:hover {
                 background-color: #082b4e;
             }
         }
     }
-}
 
 
-.address {
-    &__title {
-        text-transform: uppercase;
-        font-size: 17px;
-        font-weight: 700;
-        margin-bottom: 3px;
-    }
 
-    &__link {
-        display: block;
-        color: #262626;
-        margin-bottom: 12px;
-        font-size: 20px;
-        cursor: pointer;
+    .address {
+        &__title {
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        &__link {
+            display: block;
+            color: #262626;
+            margin-bottom: 12px;
+            font-size: 20px;
+            cursor: pointer;
+        }
     }
 }
 

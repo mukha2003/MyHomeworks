@@ -141,11 +141,14 @@ img {
 }
 
 .mouse-scroll {
-    width: 40px;
-    height: 40px;
     position: absolute;
     bottom: 70px;
     left: 49%;
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 /* ---- About us -----*/

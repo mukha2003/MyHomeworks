@@ -40,7 +40,6 @@ img {
 
 
 .main-content-fresh {
-    // background-color: #f9f8fb;
     background: url(../images/image1.png) center center/cover no-repeat;
 }
 
@@ -234,7 +233,6 @@ img {
 
             &:hover {
                 background: linear-gradient(90deg, rgba(255, 175, 27, 1) 10%, rgba(0, 188, 212, 1) 50%, rgba(196, 238, 130, 1) 92%);
-                // transform: scale(1.1);
                 transform: translateX(20px);
             }
         }
@@ -268,9 +266,6 @@ img {
             height: 100%;
             padding: 20px;
         }
-
-
-
 
         &__info {
             background: url(../images/tomato.png) right center no-repeat;
@@ -324,6 +319,9 @@ img {
     }
 
     //------- floating placeholder -----------
+    &__item {
+        position: relative;
+    }
 
     &__input {
         width: 500px;
@@ -370,7 +368,7 @@ img {
         &+.contact-form__label {
             position: absolute;
             // top: 0;
-            left: 10%;
+            left: 3%;
             user-select: none;
             color: #fff;
             transition: transform .25s ease-in-out;

@@ -290,6 +290,9 @@ img {
   justify-content: space-between;
   gap: 15px;
 }
+.contact-form__item {
+  position: relative;
+}
 .contact-form__input {
   width: 500px;
   border-width: 0;
@@ -326,7 +329,7 @@ img {
 }
 .contact-form__input + .contact-form__label {
   position: absolute;
-  left: 10%;
+  left: 3%;
   user-select: none;
   color: #fff;
   transition: transform 0.25s ease-in-out;

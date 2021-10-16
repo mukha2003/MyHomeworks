@@ -197,9 +197,10 @@ img {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 
     &__aside {
-        padding: 132px 0 0 50px;
+        padding-left: 50px;
 
         .about-title {
             margin-bottom: 7px;
@@ -280,7 +281,9 @@ img {
 
         &__info {
             background: url(../images/tomato.png) right center no-repeat;
-            flex-basis: 50%;
+            // flex-basis: 50%;
+            display: flex;
+            align-items: center;
         }
 
         &__title {

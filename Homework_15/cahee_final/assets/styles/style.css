@@ -189,9 +189,10 @@ img {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 .about__aside {
-  padding: 132px 0 0 50px;
+  padding-left: 50px;
 }
 .about__aside .about-title {
   margin-bottom: 7px;
@@ -256,11 +257,11 @@ img {
 }
 .services .services-main__info {
   background: url(../images/tomato.png) right center no-repeat;
-  flex-basis: 50%;
+  display: flex;
+  align-items: center;
 }
 .services .services-main__title {
   text-align: right;
-  margin-top: 230px;
 }
 
 /* --------  Gallery  --------*/

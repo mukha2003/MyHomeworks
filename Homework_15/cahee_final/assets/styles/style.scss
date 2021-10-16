@@ -281,14 +281,12 @@ img {
 
         &__info {
             background: url(../images/tomato.png) right center no-repeat;
-            // flex-basis: 50%;
             display: flex;
             align-items: center;
         }
 
         &__title {
             text-align: right;
-            margin-top: 230px;
         }
     }
 }

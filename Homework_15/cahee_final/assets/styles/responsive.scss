@@ -1,0 +1,517 @@
+@media screen and(max-width:1210px) {
+    .services {
+        .services-main {
+            &__t-hidden {
+                display: block;
+                margin-bottom: 0;
+            }
+
+            &__title {
+                color: transparent;
+
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width:1100px) {
+    .services {
+
+        .services-main {
+            &__list {
+                padding-left: 50px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .blog-card {
+        &__date {
+            width: 50px;
+            height: 50px;
+            left: 20px;
+            top: 20px;
+
+            .date {
+                font-size: 1.7rem;
+                line-height: 14px;
+            }
+
+            .month {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width:1030px) {
+    .fresh__aside {
+        margin-bottom: 30px;
+
+        &-descr {
+            width: 50%;
+        }
+    }
+
+    .aside__title--big {
+        font-size: 4.62rem;
+    }
+
+    .services {
+
+        .services-main {
+            padding: 60px 0;
+
+            &__list {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    .gallery {
+        .gallery-main {
+            padding: 60px 0;
+
+            &__descr {
+                width: 80%
+            }
+        }
+    }
+
+    .subscribe-main {
+        padding: 80px 0;
+
+    }
+
+    .subscribe-form {
+        &__input {
+            width: 450px;
+        }
+    }
+
+    .blog {
+        .blog-main {
+            padding: 60px 0;
+
+            &__header {
+                width: 80%;
+            }
+        }
+    }
+
+
+    .contact-foot {
+        padding: 60px 0 40px;
+
+        &__header {
+            width: 75%;
+        }
+    }
+
+
+}
+
+@media screen and(max-width:900px) {
+    .container {
+        width: 95%;
+    }
+
+    .about {
+        &__aside {
+            padding-left: 15px;
+        }
+    }
+
+    .aside__title--big {
+        font-size: 3.62rem;
+    }
+
+    .subscribe-main {
+        &__header {
+            width: 56%;
+        }
+    }
+
+    .blog-card {
+        &__date {
+            width: 50px;
+            height: 50px;
+            left: 12px;
+            top: 12px;
+        }
+
+        &__txt {
+            padding: 0 12px 12px;
+
+            .title {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:770px) {
+    .header__nav-menu {
+        .nav {
+            &__item {
+                +.nav__item {
+                    margin-left: 0;
+                }
+            }
+
+            &__link {
+                padding: 15px 10px;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .main-content-fresh {
+        .fresh {
+            padding-bottom: 325px;
+        }
+    }
+
+    .aside__title--big {
+        font-size: 2.62rem;
+    }
+
+    .about {
+        &__aside {
+            padding-left: 0;
+        }
+    }
+
+    .services {
+        .services-main {
+            &__list {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .gallery {
+        .gallery-main {
+            &__descr {
+                width: 80%;
+            }
+        }
+    }
+
+    .subscribe-main {
+        padding: 40px 0 40px;
+
+        &__header {
+            width: 60%;
+        }
+    }
+
+    .subscribe-form {
+        &__input {
+            width: 420px;
+        }
+    }
+
+    .blog-card {
+        &__date {
+            width: 50px;
+            height: 50px;
+            left: 12px;
+            top: 12px;
+        }
+
+        &__txt {
+            padding: 0 12px 12px;
+
+            .title {
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .contact-form {
+        &__input {
+            width: 420px;
+        }
+
+        &__button {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and(max-width:670px) {
+    .header {
+        &__nav-menu {
+            display: none;
+        }
+
+        #hamburger-menu {
+            display: block;
+        }
+    }
+
+    .main-content-fresh {
+        .fresh {
+            padding-top: 250px;
+            padding-bottom: 250px;
+        }
+    }
+
+    .fresh__aside {
+        .fresh-title {
+            font-size: 2.5rem;
+        }
+
+        &-descr {
+            width: 60%;
+        }
+    }
+
+    .blog-card {
+        width: calc(50% - 14px);
+    }
+
+    .services {
+        .services-main {
+
+            &__wrepper {
+                display: block;
+            }
+
+            &__info {
+                display: none;
+            }
+
+            &__list {
+                align-items: center;
+            }
+
+            &__item {
+                width: 350px;
+            }
+
+            &__svg {
+                padding: 12px;
+            }
+        }
+    }
+
+    .contact-foot__header {
+        margin-bottom: 20px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        &__button {
+            margin: 0 auto 20px;
+        }
+    }
+
+    .footer-content {
+        padding: 10px 0;
+
+        &__logo {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and(max-width:570px) {
+    .aside__descr {
+        line-height: 1.5rem;
+    }
+
+    .fresh__aside-descr {
+        width: 70%;
+    }
+
+    .main-content-fresh {
+        .fresh {
+            padding-top: 150px;
+            padding-bottom: 200px;
+        }
+    }
+
+    .about {
+        flex-direction: column-reverse;
+
+        &__aside {
+            width: 90%;
+
+            .about-title {
+                margin-bottom: 12px;
+            }
+        }
+
+        &-title {
+            text-align: center;
+        }
+    }
+
+    .subscribe-main {
+
+        &__header {
+            width: 100%;
+        }
+
+
+        &__descr {
+            width: 65%;
+        }
+
+        &__form {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    }
+
+    .subscribe-form {
+        &__input {
+            width: 400px;
+            margin-bottom: 15px;
+        }
+
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+
+
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        line-height: 40px;
+    }
+}
+
+@media screen and(max-width:425px) {
+
+    .services {
+        .services-main {
+            padding: 40px 0;
+
+            &__item {
+                width: 330px;
+            }
+
+            &__link {
+                font-size: 1rem;
+
+                svg {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        .gallery-main {
+            padding: 40px 0;
+
+            &__descr {
+                width: 90%;
+            }
+        }
+    }
+
+
+    .flex-big {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        gap: 20px;
+
+        &--big {
+            flex-basis: 100%;
+
+        }
+
+        &--small {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-basis: 100%;
+
+            .flex-pic {
+                flex-basis: calc(50% - 10px);
+            }
+        }
+    }
+
+    .flex-middle {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+
+        .flex-pic {
+            flex-basis: calc(50% - 10px);
+        }
+    }
+
+    .blog {
+        .blog-main {
+            padding: 40px 0;
+
+            &__header {
+                width: 90%;
+            }
+        }
+    }
+
+    .blog-card {
+        width: 80%;
+
+        &__date {
+            width: 60px;
+            height: 60px;
+            left: 20px;
+            top: 20px;
+        }
+
+        &__txt {
+            padding: 0 20px 20px;
+
+            .title {
+                font-size: 1.3rem;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .contact-foot {
+        padding: 40px 0 40px;
+
+        &__header {
+            width: 90%;
+        }
+    }
+
+
+    .contact-form {
+        &__input {
+            width: 360px;
+        }
+
+        &__textarea {
+            height: 150px;
+            overflow: hidden;
+        }
+    }
+
+}

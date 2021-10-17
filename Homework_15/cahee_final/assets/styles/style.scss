@@ -29,6 +29,7 @@ ol {
 
 img {
     vertical-align: top;
+    width: 100%;
 }
 
 .container {
@@ -61,18 +62,23 @@ img {
     }
 
     &__nav-menu {
-        flex-basis: 48%;
 
         .nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+
+            &__item {
+                +.nav__item {
+                    margin-left: 15px;
+                }
+            }
 
             &__link {
                 text-transform: uppercase;
                 font-size: 1rem;
                 font-weight: 700;
                 color: #262626;
-                padding: 6px 10px;
+                padding: 10px 10px;
                 position: relative;
 
                 &:after {
@@ -91,6 +97,22 @@ img {
                         width: calc(100% - 20px);
                     }
                 }
+            }
+        }
+    }
+
+    #hamburger-menu {
+
+        display: none;
+
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+
+            svg {
+                width: 40px;
+                height: 40px;
             }
         }
     }
@@ -199,8 +221,14 @@ img {
     justify-content: space-between;
     align-items: center;
 
+    &__image {
+        width: 53%;
+    }
+
     &__aside {
+        width: 47%;
         padding-left: 50px;
+        padding-right: 10px;
 
         .about-title {
             margin-bottom: 7px;
@@ -221,6 +249,11 @@ img {
     .services-main {
         padding-top: 85px;
         padding-bottom: 130px;
+
+        &__t-hidden {
+            text-align: center;
+            display: none;
+        }
 
         &__wrapper {
             display: flex;
@@ -280,9 +313,11 @@ img {
         }
 
         &__info {
-            background: url(../images/tomato.png) right center no-repeat;
+            background: url(../images/tomato.png) right center/contain no-repeat;
             display: flex;
             align-items: center;
+            justify-content: flex-end;
+            width: 50%;
         }
 
         &__title {
@@ -383,7 +418,7 @@ img {
 /* ----------subscribe ---------*/
 
 .subscribe {
-    background: url(../images/subscribe.png) center center/cover no-repeat;
+    background: url(../images/subscribe.png) center center/contain no-repeat;
 }
 
 .subscribe-main {
@@ -474,6 +509,14 @@ img {
         &:hover {
             background-color: #da3947;
         }
+    }
+}
+
+.blog-main {
+    &__cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
     }
 }
 
@@ -574,11 +617,13 @@ img {
 }
 
 .contact-foot {
+    padding-top: 81px;
+    padding-bottom: 48px;
+
     &__header {
         width: 347px;
         margin: 0 auto 39px;
         text-align: center;
-        padding-top: 81px;
     }
 
     &__title {
@@ -588,11 +633,10 @@ img {
 
 .contact-content {
     display: flex;
-    padding-bottom: 48px;
 }
 
 .contact-form {
-    flex-basis: calc(100% - 500px);
+    flex-basis: 55%;
 
     &__wrapper {
         display: flex;
@@ -684,6 +728,9 @@ img {
 }
 
 .address {
+    flex: 1;
+    padding-left: 27px;
+
     &__title {
         text-transform: uppercase;
         font-size: 17px;

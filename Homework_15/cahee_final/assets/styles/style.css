@@ -59,6 +59,7 @@ ol {
 
 img {
   vertical-align: top;
+  width: 100%;
 }
 
 .container {
@@ -85,19 +86,19 @@ img {
 .header__link {
   cursor: pointer;
 }
-.header__nav-menu {
-  flex-basis: 48%;
-}
 .header__nav-menu .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+.header__nav-menu .nav__item + .nav__item {
+  margin-left: 15px;
 }
 .header__nav-menu .nav__link {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   color: #262626;
-  padding: 6px 10px;
+  padding: 10px 10px;
   position: relative;
 }
 .header__nav-menu .nav__link:after {
@@ -112,6 +113,18 @@ img {
 }
 .header__nav-menu .nav__link:hover:after {
   width: calc(100% - 20px);
+}
+.header #hamburger-menu {
+  display: none;
+}
+.header #hamburger-menu a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.header #hamburger-menu a svg {
+  width: 40px;
+  height: 40px;
 }
 .header.scrolled {
   height: 60px;
@@ -191,8 +204,13 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.about__image {
+  width: 53%;
+}
 .about__aside {
+  width: 47%;
   padding-left: 50px;
+  padding-right: 10px;
 }
 .about__aside .about-title {
   margin-bottom: 7px;
@@ -207,6 +225,10 @@ img {
 .services .services-main {
   padding-top: 85px;
   padding-bottom: 130px;
+}
+.services .services-main__t-hidden {
+  text-align: center;
+  display: none;
 }
 .services .services-main__wrapper {
   display: flex;
@@ -256,9 +278,11 @@ img {
   padding: 20px;
 }
 .services .services-main__info {
-  background: url(../images/tomato.png) right center no-repeat;
+  background: url(../images/tomato.png) right center/contain no-repeat;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 50%;
 }
 .services .services-main__title {
   text-align: right;
@@ -341,7 +365,7 @@ img {
 
 /* ----------subscribe ---------*/
 .subscribe {
-  background: url(../images/subscribe.png) center center/cover no-repeat;
+  background: url(../images/subscribe.png) center center/contain no-repeat;
 }
 
 .subscribe-main {
@@ -418,6 +442,12 @@ img {
 }
 .blog-main__btn:hover {
   background-color: #da3947;
+}
+
+.blog-main__cards {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .blog-card {
@@ -503,11 +533,14 @@ img {
   background: url(../images/img-footer.png) center center/cover no-repeat;
 }
 
+.contact-foot {
+  padding-top: 81px;
+  padding-bottom: 48px;
+}
 .contact-foot__header {
   width: 347px;
   margin: 0 auto 39px;
   text-align: center;
-  padding-top: 81px;
 }
 .contact-foot__title {
   margin-bottom: 21px;
@@ -515,11 +548,10 @@ img {
 
 .contact-content {
   display: flex;
-  padding-bottom: 48px;
 }
 
 .contact-form {
-  flex-basis: calc(100% - 500px);
+  flex-basis: 55%;
 }
 .contact-form__wrapper {
   display: flex;
@@ -590,6 +622,10 @@ img {
   background-color: #082b4e;
 }
 
+.address {
+  flex: 1;
+  padding-left: 27px;
+}
 .address__title {
   text-transform: uppercase;
   font-size: 17px;

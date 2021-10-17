@@ -212,12 +212,26 @@
   .contact-foot__header {
     margin-bottom: 20px;
   }
-
-  .contact-content {
-    flex-direction: column;
-    align-items: center;
+  .contact-foot__descr {
+    font-size: 1.3rem;
   }
 
+  .contact-content {
+    width: 80%;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .contact-content .address {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-form__input {
+    width: 400px;
+  }
   .contact-form__button {
     margin: 0 auto 20px;
   }
@@ -268,11 +282,13 @@
   }
 
   .subscribe-form__input {
-    width: 400px;
+    width: 310px;
+    height: 50px;
     margin-bottom: 15px;
+    font-size: 1rem;
   }
   .subscribe-form__btn {
-    margin: 0 auto;
+    margin-left: 0;
   }
 
   .footer-content {
@@ -282,6 +298,23 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .fresh__aside .fresh-title {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .fresh__aside-descr {
+    margin-bottom: 150px;
+    width: 80%;
+  }
+
+  .fresh {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .fresh-btn {
+    margin: 0 auto;
+  }
+
   .services .services-main {
     padding: 40px 0;
   }
@@ -364,10 +397,27 @@
   }
 
   .contact-form__input {
-    width: 360px;
+    width: 340px;
   }
   .contact-form__textarea {
     height: 150px;
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main-content-fresh .fresh {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .main-content-fresh .fresh-btn {
+    margin: 0 auto;
+  }
+  .main-content-fresh .fresh__aside .fresh-title {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .main-content-fresh .fresh__aside-descr {
+    margin-bottom: 150px;
+    width: 80%;
   }
 }

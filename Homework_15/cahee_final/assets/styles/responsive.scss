@@ -236,6 +236,8 @@
         }
     }
 
+    .contact-content {}
+
     .contact-form {
         &__input {
             width: 420px;
@@ -304,16 +306,35 @@
         }
     }
 
-    .contact-foot__header {
-        margin-bottom: 20px;
+    .contact-foot {
+        &__header {
+            margin-bottom: 20px;
+        }
+
+        &__descr {
+            font-size: 1.3rem;
+        }
     }
 
     .contact-content {
-        flex-direction: column;
+        width: 80%;
+        flex-direction: column-reverse;
         align-items: center;
+        margin: 0 auto;
+
+        .address {
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 20px;
+        }
     }
 
     .contact-form {
+        &__input {
+            width: 400px;
+        }
+
         &__button {
             margin: 0 auto 20px;
         }
@@ -366,7 +387,6 @@
             width: 100%;
         }
 
-
         &__descr {
             width: 65%;
         }
@@ -375,17 +395,18 @@
             flex-direction: column;
             align-items: flex-start;
         }
-
     }
 
     .subscribe-form {
         &__input {
-            width: 400px;
+            width: 310px;
+            height: 50px;
             margin-bottom: 15px;
+            font-size: 1rem;
         }
 
         &__btn {
-            margin: 0 auto;
+            margin-left: 0;
         }
     }
 
@@ -399,6 +420,27 @@
 }
 
 @media screen and(max-width:425px) {
+
+    .fresh__aside {
+        .fresh-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        &-descr {
+            margin-bottom: 150px;
+            width: 80%;
+        }
+    }
+
+    .fresh {
+        padding-top: 150px;
+        padding-bottom: 50px;
+
+        &-btn {
+            margin: 0 auto;
+        }
+    }
 
     .services {
         .services-main {
@@ -429,7 +471,6 @@
         }
     }
 
-
     .flex-big {
         display: flex;
         flex-wrap: wrap;
@@ -439,7 +480,6 @@
 
         &--big {
             flex-basis: 100%;
-
         }
 
         &--small {
@@ -505,7 +545,7 @@
 
     .contact-form {
         &__input {
-            width: 360px;
+            width: 340px;
         }
 
         &__textarea {
@@ -513,5 +553,29 @@
             overflow: hidden;
         }
     }
+}
 
+@media screen and(max-width:375px) {
+    .main-content-fresh {
+        .fresh {
+            padding-top: 150px;
+            padding-bottom: 50px;
+
+            &-btn {
+                margin: 0 auto;
+            }
+        }
+
+        .fresh__aside {
+            .fresh-title {
+                text-align: center;
+                margin-bottom: 70px;
+            }
+
+            &-descr {
+                margin-bottom: 150px;
+                width: 80%;
+            }
+        }
+    }
 }

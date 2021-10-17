@@ -135,6 +135,7 @@ img {
 
 .main-content-fresh {
   background: url(../images/image1.png) center center/cover no-repeat;
+  height: 100vh;
 }
 
 .fresh {

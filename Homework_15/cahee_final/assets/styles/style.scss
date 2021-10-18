@@ -130,11 +130,16 @@ img {
 .main-content-fresh {
     background: url(../images/image1.png) center center/cover no-repeat;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .fresh {
-    padding-top: 325px;
-    padding-bottom: 405px;
+    // padding-top: 325px;
+    // padding-bottom: 405px;
+
+
     // position: relative; //for mouse scroll
 }
 

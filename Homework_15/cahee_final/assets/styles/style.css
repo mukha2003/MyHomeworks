@@ -136,11 +136,9 @@ img {
 .main-content-fresh {
   background: url(../images/image1.png) center center/cover no-repeat;
   height: 100vh;
-}
-
-.fresh {
-  padding-top: 325px;
-  padding-bottom: 405px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .fresh__aside {

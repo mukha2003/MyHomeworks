@@ -128,9 +128,17 @@
   .services .services-main__list {
     padding-left: 0;
   }
+  .services .services-main__item:hover {
+    background: #fff;
+    transform: translateX(0);
+  }
 
   .gallery .gallery-main__descr {
     width: 80%;
+  }
+
+  .flex-pic:hover {
+    transform: scale(1);
   }
 
   .subscribe-main {
@@ -144,6 +152,13 @@
     width: 420px;
   }
 
+  .blog-card:hover {
+    transform: scale(1);
+  }
+  .blog-card:hover .blog-card__date {
+    left: 12px;
+    top: 12px;
+  }
   .blog-card__date {
     width: 50px;
     height: 50px;
@@ -169,7 +184,7 @@
   .header__nav-menu {
     display: none;
   }
-  .header #hamburger-menu {
+  .header #hamburger_menu {
     display: block;
   }
 

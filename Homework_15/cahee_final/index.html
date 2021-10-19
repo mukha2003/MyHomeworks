@@ -12,6 +12,30 @@
 </head>
 
 <body>
+    <div id="mobile-menu-wrap">
+        <div class="sidemenu-top">
+            <div class="mobile-logo">
+                <a href="#"><img src="assets/images/main-logo.png" alt=""></a>
+            </div>
+            <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav class="sidemenu">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="page-overlay"></div>
+
 
     <!--   Header   -->
     <header class="header">
@@ -19,7 +43,7 @@
             <div class="header__logo">
                 <a class="header__link" href="#"><img src="assets/images/main-logo.png" alt=""></a>
             </div>
-            <div class="header__nav-menu">
+            <nav class="header__nav-menu">
                 <ul class="nav">
                     <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
                     <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
@@ -28,17 +52,14 @@
                     <li class="nav__item"><a class="nav__link" href="#blog">blog</a></li>
                     <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <div id="hamburger-menu">
-                <a href="#">
-                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                        <title>70 Basic icons by Xicons.co</title>
-                        <path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#6f7380" />
-                        <path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#6f7380" />
-                        <path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#6f7380" />
-                    </svg>
-                </a>
+            <div id="hamburger_menu">
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
         </div>
     </header>
@@ -348,6 +369,16 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        $(function () {
+            $('.hamburger, #page-overlay').on('click', function () {
+                $('#mobile-menu-wrap .hamburger').toggleClass('is-active');
+                $('body').toggleClass('open');
+            })
+        })
+
     </script>
 
 

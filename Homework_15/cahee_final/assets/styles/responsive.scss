@@ -187,6 +187,13 @@
             &__list {
                 padding-left: 0;
             }
+
+            &__item {
+                &:hover {
+                    background: #fff;
+                    transform: translateX(0);
+                }
+            }
         }
     }
 
@@ -195,6 +202,13 @@
             &__descr {
                 width: 80%;
             }
+        }
+    }
+
+    .flex-pic {
+
+        &:hover {
+            transform: scale(1);
         }
     }
 
@@ -213,6 +227,15 @@
     }
 
     .blog-card {
+        &:hover {
+            transform: scale(1);
+
+            .blog-card__date {
+                left: 12px;
+                top: 12px;
+            }
+        }
+
         &__date {
             width: 50px;
             height: 50px;
@@ -247,7 +270,7 @@
             display: none;
         }
 
-        #hamburger-menu {
+        #hamburger_menu {
             display: block;
         }
     }

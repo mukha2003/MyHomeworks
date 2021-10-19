@@ -154,6 +154,10 @@
 }
 
 @media screen and(max-width:770px) {
+    .main-content-fresh {
+        background: url(../images/image1.png) 60% center/cover no-repeat;
+    }
+
     .header__nav-menu {
         .nav {
             &__item {
@@ -275,9 +279,13 @@
         }
     }
 
+
+
     .fresh__aside {
+
         .fresh-title {
             font-size: 2.5rem;
+
         }
 
         &-descr {

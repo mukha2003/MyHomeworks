@@ -107,6 +107,10 @@
   }
 }
 @media screen and (max-width: 770px) {
+  .main-content-fresh {
+    background: url(../images/image1.png) 60% center/cover no-repeat;
+  }
+
   .header__nav-menu .nav__item + .nav__item {
     margin-left: 0;
   }

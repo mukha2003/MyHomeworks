@@ -213,6 +213,7 @@ img {
 .main-content-fresh {
   background: url(../images/image1.png) center center/cover no-repeat;
   height: 100vh;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: flex-start;

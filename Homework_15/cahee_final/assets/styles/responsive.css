@@ -108,7 +108,7 @@
 }
 @media screen and (max-width: 770px) {
   .main-content-fresh {
-    background: url(../images/image1.png) 60% center/cover no-repeat;
+    background-position: 60% center;
   }
 
   .header__nav-menu .nav__item + .nav__item {
@@ -203,7 +203,7 @@
     width: calc(50% - 14px);
   }
 
-  .services .services-main__wrepper {
+  .services .services-main__wrapper {
     display: block;
   }
   .services .services-main__info {
@@ -254,6 +254,10 @@
   }
 }
 @media screen and (max-width: 570px) {
+  .main-content-fresh {
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.45);
+  }
+
   .aside__descr {
     line-height: 1.5rem;
   }
@@ -273,6 +277,14 @@
   }
   .about-title {
     text-align: center;
+  }
+
+  .flex-big {
+    margin-bottom: 15px;
+  }
+
+  .flex-middle {
+    gap: 15px;
   }
 
   .subscribe-main__header {

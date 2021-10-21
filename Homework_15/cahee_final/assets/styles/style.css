@@ -302,7 +302,10 @@ img {
 }
 
 .main-content-fresh {
-  background: url(../images/image1.png) center center/cover no-repeat;
+  background-color: #fff;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   min-height: 400px;
   display: flex;
@@ -446,7 +449,10 @@ img {
   padding: 20px;
 }
 .services .services-main__info {
-  background: url(../images/tomato.png) right center/contain no-repeat;
+  background-size: contain;
+  background-color: #70bfff;
+  background-position: right center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -533,7 +539,10 @@ img {
 
 /* ----------subscribe ---------*/
 .subscribe {
-  background: url(../images/subscribe.png) center center/contain no-repeat;
+  background-color: #fff;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .subscribe-main {
@@ -689,7 +698,7 @@ img {
   content: "";
   display: block;
   width: 100%;
-  height: 60%;
+  height: 80%;
   opacity: 0.8;
   position: absolute;
   left: 0;
@@ -698,7 +707,10 @@ img {
 }
 
 .main-contact-foot {
-  background: url(../images/img-footer.png) center center/cover no-repeat;
+  background-color: #00c4c4;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-foot {
@@ -819,6 +831,9 @@ img {
   line-height: 55px;
   color: #b9b9b9;
 }
+.footer-content__copyright {
+  font-size: 1rem;
+}
 .footer-content__logo {
   margin-left: -65px;
   cursor: pointer;
@@ -828,7 +843,7 @@ img {
 }
 .footer-content__text {
   letter-spacing: -1px;
-  font-size: 15px;
+  font-size: 1rem;
 }
 .footer-content__text--red {
   color: #ff2b58;

@@ -367,9 +367,23 @@ $m-dark:#3c3c3c;
         }
     }
 
+    .footer {
+        padding: 40px;
+    }
+
     .footer-content {
+
+        &__wrap {
+            flex-direction: column;
+            gap: 10px;
+        }
         &__logo {
-            margin-right: 25px;
+            margin-right: 0;
+        }
+
+        &__copyright {
+            @include fz(16);
+            text-align: center;
         }
     }
 

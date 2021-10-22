@@ -178,7 +178,7 @@ img {
 
 #mobile-menu-wrap {
   position: fixed;
-  background-color: #fff;
+  background-color: cornflowerblue;
   height: 100vh;
   top: 0;
   left: -110%;
@@ -198,6 +198,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fce518;
 }
 
 .sidemenu li {

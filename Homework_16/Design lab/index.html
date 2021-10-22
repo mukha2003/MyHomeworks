@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="lazy-bg" data-src="assets/images/hero-bg.png">
         <div class="header-content">
             <div class="header-content__logo">
                 <a href="#">
@@ -55,7 +55,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services lazy-bg" data-src="assets/images/services.png">
             <div class="services-content content-padding container">
                 <h2 class="services-content__title main-title">
                     SERVICES
@@ -135,27 +135,39 @@
             <div class="gallery-content">
                 <div class="gallery-content__wrap">
                     <div class="gallery-content__card--small gallery-content__card">
-                        <img src="assets/images/topworks.png" alt="">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="assets/images/topworks.png" alt="">
                         <div class="gallery-content__title">topworkz</div>
                     </div>
                     <div class="gallery-content__card--big gallery-content__card">
-                        <img src="assets/images/joint.png" alt="">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="assets/images/joint.png" alt="">
                         <div class="gallery-content__title">joint</div>
                     </div>
                     <div class="gallery-content__card--small gallery-content__card">
-                        <img src="assets/images/market.png" alt="">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="assets/images/market.png" alt="">
                         <div class="gallery-content__title">market</div>
                     </div>
                     <div class="gallery-content__card--small gallery-content__card">
-                        <img src="assets/images/worktop.png" alt="">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="assets/images/worktop.png" alt="">
                         <div class="gallery-content__title">worktop</div>
                     </div>
                     <div class="gallery-content__card--big gallery-content__card">
-                        <img src="assets/images/lable.png" alt="">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="assets/images/lable.png" alt="">
                         <div class="gallery-content__title">lable</div>
                     </div>
                     <div class="gallery-content__card--small gallery-content__card">
-                        <img src="assets/images/kyiv.png" alt="">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="assets/images/kyiv.png" alt="">
                         <div class="gallery-content__title">kyiv</div>
                     </div>
                 </div>
@@ -191,6 +203,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/lazyload.js"></script>
 
 </body>
 

@@ -59,7 +59,10 @@ body {
 }
 
 header {
-  background: url(../images/hero-bg.png) top right/cover no-repeat;
+  background-color: #a9b4c8;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -176,7 +179,10 @@ header:after {
 }
 
 .services {
-  background: url(../images/services.png) center center/cover no-repeat;
+  background-color: #a9b4c8;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   padding: 125px 0 110px;
 }
 .services .services-content {

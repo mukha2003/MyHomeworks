@@ -37,19 +37,13 @@ img {
 }
 
 .main_content {
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 20px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    margin-top: 92px;
-    margin-bottom: 74px;
+    padding: 80px 0;
     gap: 20px;
 }
 
 .content_card {
-    /* flex-basis: calc((100% - 40px) / 3);  */
     height: 540px;
     background-color: #fff;
     position: relative;
@@ -89,7 +83,6 @@ img {
 }
 
 .big {
-    /* flex-basis: calc(((100% - 40px) / 3) * 2 + 20px); */
     position: relative;
     grid-column-start: span 2;
 }

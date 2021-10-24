@@ -36,7 +36,6 @@ img {
     width: 100%;
     height: 100%;
     vertical-align: top;
-    object-fit: cover;
 }
 
 body {
@@ -64,7 +63,11 @@ body {
     &__pic {
     position: relative;
     width: 100%;
-    height: 100%;      
+    height: 100%;   
+    img {
+        object-fit: cover;
+        object-position: center;
+    }   
     }
     &__pic:after {
         content: '';
@@ -76,9 +79,6 @@ body {
         left: 0;
         background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .8) 100%);
     }
-
-
-
     &__date {
         color: #818181;
         @include fz(13);
@@ -88,7 +88,6 @@ body {
         left: 45px;
         z-index: 10;
     }
-
     &__title {
         text-transform: uppercase;
         color: #fff;

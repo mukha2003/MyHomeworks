@@ -33,7 +33,6 @@ img {
   width: 100%;
   height: 100%;
   vertical-align: top;
-  object-fit: cover;
 }
 
 body {
@@ -62,6 +61,10 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+}
+.card-big__pic img {
+  object-fit: cover;
+  object-position: center;
 }
 .card-big__pic:after {
   content: "";

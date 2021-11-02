@@ -414,14 +414,17 @@
                         </div>
                     </form>
 
-                    <div class="address">
+                    <div class="address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                         <div class="address__title">address</div>
-                        <a href="https://goo.gl/maps/bjvHTMrJGbu1j3NaA" target="_blank" class="address__link">123 City
-                            name, Street, City, Country</a>
+                        <a href="https://goo.gl/maps/bjvHTMrJGbu1j3NaA" target="_blank" class="address__link"><span
+                                itemprop="streetAddress">123 City name, Street, </span>
+                            <span itemprop="addressLocality">City, Country</span></a>
                         <div class="address__title">email</div>
-                        <a class="address__link" href="mailto:cahee@domain.com">cahee@domain.com</a>
+                        <a class="address__link" href="mailto:cahee@domain.com"><span
+                                itemprop="email">cahee@domain.com</span></a>
                         <div class="address__title">phone</div>
-                        <a class="address__link" href="tel:+0123456789">+0123456789</a>
+                        <a class="address__link" href="tel:+0123456789"><span
+                                itemprop="telephone">+0123456789</span></a>
                     </div>
                 </div>
             </div>

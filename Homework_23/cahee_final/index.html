@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Cahee, my favourite website ever</title>
+    <!-- description -->
+    <meta name="description" content="all about html, css and scss practice, tears, and fails">
+    <!-- robots -->
+    <meta name="robots" content="all">
+    <meta name="revisit-after" content="1 days">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/style.min.css" />
+    <link rel="stylesheet" href="assets/styles/responsive.min.css" />
+</head>
+
+<body>
+    <div id="mobile-menu-wrap">
+        <div class="sidemenu-top">
+            <div class="mobile-logo">
+                <a href="#"><img src="assets/images/main-logo.png" alt="" /></a>
+            </div>
+            <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav class="sidemenu">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="page-overlay"></div>
+
+    <!--   Header   -->
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <a class="header__link" href="#"><img src="assets/images/main-logo.png" alt="" /></a>
+            </div>
+            <nav class="header__nav-menu">
+                <ul class="nav">
+                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#services">services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#gallery">gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#blog">blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="hamburger_menu">
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--   fresh  -->
+        <section class="main-content-fresh lazy-bg" data-src="assets/images/image1.png">
+            <div class="fresh container">
+                <div class="fresh__aside aside">
+                    <h2 class="aside__title fresh-title">Fresh Life</h2>
+                    <p class="aside__descr fresh__aside-descr">
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                </div>
+                <button class="btn-common fresh-btn fresh-btn--orange">
+                    get free now
+                </button>
+
+                <!-- <div class="mouse-scroll">
+                    <svg display="none">
+                        <symbol viewbox="0 0 416.031 416.031" id="mouse">
+                            <g>
+                                <path
+                                    d="M221.605,0h-31.913C123.743,0,72.083,53.745,72.083,122.356v171.306c0,68.618,51.66,122.369,117.609,122.369h31.913
+                        c67.46,0,122.343-54.894,122.343-122.369V122.356C343.948,54.889,289.065,0,221.605,0z M206.781,64.12h2.469c3.859,0,7,3.14,7,7
+                        v49.833c0,3.86-3.141,7-7,7h-2.469c-3.859,0-7-3.14-7-7V71.12C199.781,67.26,202.922,64.12,206.781,64.12z M327.948,293.662
+                        c0,58.652-47.705,106.369-106.343,106.369h-31.913c-56.978,0-101.609-46.723-101.609-106.369V122.356
+                        C88.083,62.718,132.715,16,189.692,16h10.225v33.167c-9.34,2.927-16.136,11.661-16.136,21.954v49.833
+                        c0,10.292,6.796,19.027,16.136,21.953v41.166c0,4.418,3.582,8,8,8s8-3.582,8-8v-41.108c9.441-2.865,16.333-11.647,16.333-22.011
+                        V71.12c0-10.364-6.892-19.146-16.333-22.012V16h5.688c58.638,0,106.343,47.711,106.343,106.356V293.662z" />
+                            </g>
+                        </symbol>
+                    </svg>
+
+                    <svg width="40" height="40" class="mouse-scroll__icon">
+                        <use xlink:href="#mouse"></use>
+                    </svg>
+                </div> -->
+            </div>
+        </section>
+
+        <!--  About us -->
+        <section class="main-content-about" id="about">
+            <div class="about container">
+                <div class="about__image">
+                    <img class="lazy" data-src="assets/images/about-croppf.png" alt="picture" />
+                </div>
+                <div class="about__aside">
+                    <h2 class="
+                about-title
+                aside__title aside__title--big aside__title--white
+              ">
+                        About Us
+                    </h2>
+                    <p class="about-descr aside__descr aside__descr--white">
+                        Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum.
+                    </p>
+                    <p class="aside__descr aside__descr--white">
+                        Nim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                        error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--     Our services      -->
+
+        <section class="services" id="services">
+            <div class="services-main container">
+                <h2 class="
+              aside__title aside__title--white aside__title--big
+              services-main__t-hidden
+            ">
+                    Our Services
+                </h2>
+
+                <div class="services-main__wrapper">
+                    <ul class="services-main__list">
+                        <li class="services-main__item">
+                            <a class="services-main__link" href="#"><span class="services-main__link-span">Online
+                                    Shopping</span><span class="services-main__svg"><svg>
+                                        <use xlink:href="assets/images/sprite.svg#shopping"></use>
+                                    </svg></span></a>
+                        </li>
+                        <li class="services-main__item">
+                            <a class="services-main__link" href="#"><span class="services-main__link-span">Quality
+                                    Product</span><span class="services-main__svg"><svg>
+                                        <use xlink:href="assets/images/sprite.svg#quality"></use>
+                                    </svg></span></a>
+                        </li>
+                        <li class="services-main__item">
+                            <a class="services-main__link" href="#"><span class="services-main__link-span">Domestic &
+                                    International Delivery</span><span class="services-main__svg"><svg>
+                                        <use xlink:href="assets/images/sprite.svg#delivery"></use>
+                                    </svg></span></a>
+                        </li>
+                        <li class="services-main__item">
+                            <a class="services-main__link" href="#"><span class="services-main__link-span">Well
+                                    Organized</span><span class="services-main__svg"><svg>
+                                        <use xlink:href="assets/images/sprite.svg#well"></use>
+                                    </svg></span></a>
+                        </li>
+                    </ul>
+                    <div class="services-main__info lazy-bg" data-src="assets/images/tomato.png">
+                        <h2 class="
+                  aside__title aside__title--white aside__title--big
+                  services-main__title
+                ">
+                            Our Services
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--      Gallery      -->
+
+        <section class="gallery" id="gallery">
+            <div class="gallery-main container">
+                <div class="gallery-main__header">
+                    <h2 class="aside__title--big gallery-main__title">Gallery</h2>
+                    <p class="aside__descr gallery-main__descr">
+                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+
+                <div class="gallery-main__wrap">
+                    <div class="flex-big">
+                        <div class="flex-big--big flex-pic">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="assets/images/gallery-big.jpg" alt="" />
+                        </div>
+                        <div class="flex-big--small">
+                            <div class="flex-pic">
+                                <img class="lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="assets/images/gallery-small1.jpg" alt="" />
+                            </div>
+                            <div class="flex-pic">
+                                <img class="lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="assets/images/gallery-small2.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-middle">
+                        <div class="flex-pic">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="assets/images/gallery-middle1.jpg" alt="" />
+                        </div>
+
+                        <div class="flex-pic">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="assets/images/gallery-middle2.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-common gallery-main__btn">view more</button>
+            </div>
+        </section>
+
+        <!--     Subscribe       -->
+        <section class="subscribe lazy-bg" data-src="assets/images/subscribe.png">
+            <div class="subscribe-main container">
+                <div class="subscribe-main__header">
+                    <h3 class="subscribe-main__title">Subscribe To Us</h3>
+                    <p class="aside__descr subscribe-main__descr">
+                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam.
+                    </p>
+                </div>
+                <div class="subscribe-main__wrap">
+                    <form action="#" method="post" class="subscribe-main__form subscribe-form">
+                        <input class="subscribe-form__input" type="email" placeholder="Your email address.." />
+                        <button class="btn-common subscribe-form__btn" type="submit">
+                            subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--      Blog      -->
+
+        <section class="blog" id="blog">
+            <div class="blog-main container">
+                <div class="blog-main__header">
+                    <h2 class="
+                aside__title aside__title--white aside__title--big
+                blog-main__title">
+                        Blog
+                    </h2>
+                    <p class="aside__descr aside__descr--white blog-main__descr">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit.
+                    </p>
+                </div>
+
+                <div class="blog-main__cards">
+                    <div class="blog-card gradient">
+                        <a class="blog-card__link" href="#">
+                            <img class="blog-card__img lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="assets/images/kiwi.jpg" alt="picture">
+                            <div class="blog-card__date">
+                                <span class="date">20</span><span class="month">nov</span>
+                            </div>
+                            <div class="blog-card__txt">
+                                <div class="title">
+                                    Green Smoothies: Too Much of a Good Thing?
+                                </div>
+                                <div class="author">By Auskteez - 2 hours ago</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-card gradient">
+                        <a class="blog-card__link" href="#">
+                            <img class="blog-card__img lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="assets/images/peas.jpg" alt="picture">
+                            <div class="blog-card__date">
+                                <span class="date">14</span><span class="month">nov</span>
+                            </div>
+                            <div class="blog-card__txt">
+                                <div class="title">
+                                    Growing Food and a “Thirst” for Innovation
+                                </div>
+                                <div class="author">By Auskteez - 3 hours ago</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-card gradient">
+                        <a class="blog-card__link" href="#">
+                            <img class="blog-card__img lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="assets/images/berry.jpg" alt="picture">
+                            <div class="blog-card__date">
+                                <span class="date">10</span><span class="month">nov</span>
+                            </div>
+                            <div class="blog-card__txt">
+                                <div class="title">
+                                    Pesticides & Food: What You Need to Know
+                                </div>
+                                <div class="author">By Auskteez - 6 hours ago</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="btn-common blog-main__btn">view more</button>
+            </div>
+        </section>
+
+        <!--before footer -->
+        <section class="main-contact-foot lazy-bg" id="contact" data-src="assets/images/img-footer.png">
+            <div class="contact-foot container">
+                <div class="contact-foot__header">
+                    <h2 class="aside__title--big contact-foot__title">Contact</h2>
+                    <p class="aside__descr contact-foot__descr">
+                        For new projects, ideas, business or anything you'd like to
+                        discuss, contact with me!
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <form action="#" method="post" class="contact-form">
+                        <div class="contact-form__wrapper">
+                            <div class="contact-form__item">
+                                <input type="text" name="name" id="contact-name" class="contact-form__input" required
+                                    placeholder="Your name" />
+                                <label for="contact-name" class="contact-form__label">Your name</label>
+                            </div>
+                            <div class="contact-form__item">
+                                <input type="email" name="email" id="contact-email" class="contact-form__input"
+                                    placeholder="Your email.." />
+                                <label for="contact-email" class="contact-form__label">Your email..</label>
+                            </div>
+                            <div class="contact-form__item">
+                                <input type="tel" name="tel" id="contact-tel"
+                                    class="contact-form__tel contact-form__input" placeholder="Your phone number.." />
+                                <label for="contact-tel" class="contact-form__label">Your phone number..</label>
+                            </div>
+                            <div class="contact-form__item">
+                                <textarea id="contact-text" class="contact-form__textarea contact-form__input"
+                                    name="your-text" placeholder="Your message.."></textarea>
+                                <label for="contact-text" class="contact-form__label">Your message..</label>
+                            </div>
+
+                            <button type="submit" class="
+                    contact-form__button contact-form__button--blue
+                    btn-common">
+                                submit
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="address">
+                        <div class="address__title">address</div>
+                        <a href="https://goo.gl/maps/bjvHTMrJGbu1j3NaA" target="_blank" class="address__link">123 City
+                            name, Street, City, Country</a>
+                        <div class="address__title">email</div>
+                        <a class="address__link" href="mailto:cahee@domain.com">cahee@domain.com</a>
+                        <div class="address__title">phone</div>
+                        <a class="address__link" href="tel:+0123456789">+0123456789</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-content__copyright">
+                &copy; 2015 Company. All right reserved.
+            </div>
+            <a class="footer-content__logo" href="#"><img src="assets/images/logo-small.png" alt="" /></a>
+            <div class="footer-content__text">
+                Made with <span class="footer-content__text--red">love</span> love by
+                Auskteez
+            </div>
+        </div>
+    </footer>
+
+    <!--     Script      -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+    <script>
+        $(function () {
+            $(".contact-form__tel").mask("+99(999) 999-99-99");
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 10) {
+                    $(".header").addClass("scrolled");
+                } else {
+                    $(".header").removeClass("scrolled");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".hamburger, #page-overlay").on("click", function () {
+                $("#mobile-menu-wrap .hamburger").toggleClass("is-active");
+                $("body").toggleClass("open");
+            });
+        });
+    </script>
+
+    <script src="assets/js/lazyload.js"></script>
+</body>
+
+</html>

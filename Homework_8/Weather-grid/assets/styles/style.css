@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3499cc;
+  border: 24px solid #2b81ac;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 29px 0 35px;
+  letter-spacing: 0.6px;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+h1 + i {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+}
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  background-color: #fff;
+  border: 6px solid #fff;
+  margin-bottom: 26px;
+}
+
+.w50 {
+  grid-column: span 2;
+}
+
+.w100 {
+  grid-column: span 4;
+}
+
+li {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+h3 {
+  margin-bottom: 6px;
+}
+
+.content {
+  padding: 32px 0 20px;
+  transition: all 0.2s ease-in;
+}
+/* 
+ul:hover li {
+  opacity: 0.6;
+}
+
+ul:hover li:hover {
+  opacity: 1;
+} */
+ul:hover li:not(li:hover) {
+  opacity: 0.6;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.temp {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 42px;
+  line-height: 61px;
+}
+
+ul li:first-child .content {
+  background-color: #3499cc;
+}
+
+ul li:nth-child(2) .content {
+  background-color: #33cccc;
+}
+
+ul li:nth-child(3) .content {
+  background-color: #969;
+}
+
+ul li:nth-child(4) .content {
+  background-color: #c24747;
+}
+
+ul li:nth-child(5) .content {
+  background-color: #e2674a;
+}
+
+ul li:nth-child(6) .content {
+  background-color: #ffcc66;
+}
+
+ul li:nth-child(7) .content {
+  background-color: #9c9;
+}
+
+ul li:nth-child(8) .content {
+  background-color: #699;
+}
+
+ul li:nth-child(9) .content {
+  background-color: #c69;
+}
+
+ul li:nth-child(10) .content {
+  background-color: #396;
+}
+
+ul li:nth-child(11) .content {
+  background-color: #669;
+}
+
+.footer_txt {
+  font-size: 22px;
+  padding-bottom: 100px;
+}

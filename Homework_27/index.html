@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="card col-4 me-4">
+                <div class="card-body">
+                    <p class="card-text p-2" style="background-color: #ccc;">Запросить у пользователя его возраст и
+                        определить, кем он является:
+                        ребенком (0–12), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).</p>
+                    <label for="age" class="form-label">Введите свой возраст</label>
+                    <input type="text" name="age" id="age" class="mb-2 form-control">
+                    <button onclick="whoYouAre()" class="btn btn-primary mb-3">Push</button>
+                    <div id="res" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                </div>
+            </div>
+            <div class="card col-4 me-4">
+                <div class="card-body">
+                    <p class="card-text p-2" style="background-color: #ccc;">Запросить у пользователя число от 0 до
+                        9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).</p>
+                    <label for="symbol" class="form-label">Введи число от 0 до 9</label>
+                    <input type="text" name="symbol" id="symbol" class="mb-2 form-control">
+                    <button onclick="yourSymbol()" class="btn btn-primary mb-3">Жми</button>
+                    <div id="your-symbol" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-4 me-4">
+                <div class="card-body">
+                    <p class="card-text p-2" style="background-color: #ccc;">Запросить у пользователя трехзначное
+                        число и проверить, есть ли в нем одинаковые цифры.</p>
+                    <label for="number123" class="form-label">Введи трехзначное число</label>
+                    <input type="text" name="number" id="number123" class="mb-2 form-control">
+                    <button onclick="sameNumbers()" class="btn btn-primary mb-3">Жми</button>
+                    <div id="result" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                </div>
+            </div>
+
+            <div class="card col-4 me-4">
+                <div class="card-body">
+                    <p class="card-text p-2" style="background-color: #ccc;">Запросить у пользователя год и
+                        проверить, високосный он или нет.</p>
+                    <label for="year" class="me-4 form-label">Введи год</label>
+                    <input type="text" name="year" id="year" class="mb-2 form-control">
+                    <button onclick="intercalaryYear()" class="btn btn-primary mb-3">Вычислить</button>
+                    <div id="year_kind" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-4 me-4">
+                <div class="card-body">
+                    <p class="card-text p-2" style="background-color: #ccc;">Запросить у пользователя пятиразрядное
+                        число и определить, является ли оно палиндромом.</p>
+                    <label for="pal-num" class="me-4 form-label">Введи пятизначное число</label>
+                    <input type="text" name="number" id="pal-num" class="mb-2 form-control">
+                    <button onclick="isPalindrom()" class="btn btn-primary mb-3">Вычислить</button>
+                    <div id="is-pal" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                </div>
+            </div>
+
+            <div class="card col-4 me-4">
+                <div class="card-body">
+                    <p class="card-text p-2" style="background-color: #ccc;">Запросите у пользователя пятизначное
+                        число и переместите последнюю цифру в начало </p>
+                    <label for="num_5" class="me-4 form-label">Введи пятизначное число</label>
+                    <input type="text" name="number" id="num_5" class="mb-2 form-control">
+                    <button onclick="replace()" class="btn btn-primary mb-3">Вычислить</button>
+                    <div id="num_repl" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="card col-4 me-4">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #ccc;">Зарплата работника составляет $250 +
+                            10% от продаж. Запросите общую сумму продаж за месяц и посчитайте зарплату.</p>
+                        <label for="pal-num" class="me-4 form-label">Введи общую сумму продаж за месяц</label>
+                        <input type="text" name="number" id="sale" class="mb-2 form-control">
+                        <button onclick="totalSale()" class="btn btn-primary mb-3">Вычислить</button>
+                        <div id="total" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

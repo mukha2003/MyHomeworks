@@ -7,18 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Homeworks</title>
     <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
         h1 {
+            text-align: center;
             text-transform: uppercase;
             color: #262686;
+        }
+
+        .main-list {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
         }
 
         .list-name {
             text-transform: uppercase;
             color: #ff6347;
+            border: 1px dotted #999;
+            text-align: center;
+            padding: 10px 0;
+            transition: all 1s;
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        .list-name:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(100, 148, 237, 0.521);
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            z-index: -1;
+            transition: all .6s ease-in;
+        }
+
+        .list-name:hover::after {
+            top: 0;
+            left: 0;
+        }
+
+        .list-name ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* .list-name:hover li {
+            transform: rotateY(720deg);
+        } */
+
+        .list-name:hover li::before {
+            top: 0;
+            left: -20px;
+        }
+
+        .list-name:hover li a {
+            color: rgb(0, 255, 64);
         }
 
         .list-name li {
             text-transform: none;
+            padding-top: 3px;
+            transition: all .5s ease;
+            position: relative;
+        }
+
+        .list-name li::before {
+            content: '☞';
+            margin-right: 5px;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: -550%;
+            transition: all 1s ease;
         }
 
         a:hover {
@@ -160,6 +234,11 @@
         <li class="list-name">Lesson_23
             <ul>
                 <li><a href="Homework_23/cahee_final/index.html" target="_blank">cahee seo</a></li>
+            </ul>
+        </li>
+        <li class="list-name">Lesson_27
+            <ul>
+                <li><a href="Homework_27/index.html" target="_blank">Js start</a></li>
             </ul>
         </li>
     </ul>

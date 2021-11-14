@@ -15,6 +15,10 @@ function whoYouAre(){
     if(age > 60){
         result = 'пенсионер';
     }
+    // result = (age < 11) ? 'ребенок' :
+    //         (age < 18) ? 'подросток' :
+    //         (age < 60) ? 'взрослый' :
+    //         (age > 60) ? 'пенсионер':
 
     document.getElementById("res").innerText = `Вы: ${result}!`; //берем id res и методом innerText вставляем result
 }

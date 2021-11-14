@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Подсчитать сумму всех чисел в
+                            заданном пользователем диапазоне.</p>
+                        <label for="num1">Введи число oт</label>
+                        <input type="text" id="num1" class="mb-2">
+                        <label for="num2">Введи число до</label>
+                        <input type="text" id="num2" class="mb-2">
+                        <button onclick="sumNumbers()" class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="res" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Запросить 2 числа и найти только
+                            наибольший общий делитель.</p>
+                        <label for="num1">Введи какое-то число </label>
+                        <input type="text" id="num_1" class="mb-2">
+                        <label for="num2">Введи еще число </label>
+                        <input type="text" id="num_2" class="mb-2">
+
+                        <button onclick="biggestDivider()" class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="res-div" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Запросить у пользователя число и
+                            вывести все делители этого числа.</p>
+                        <label for="num1">Введи какое-то число </label>
+                        <input type="text" id="number" class="mb-2">
+                        <button onclick="allDividers()" class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="resu" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Определить количество цифр во
+                            введенном числе.</p>
+                        <label for="nqa">Введи какое-то число </label>
+                        <input type="text" id="nqa" class="mb-2">
+                        <button onclick="numberQuantity()" class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="count" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Запросить у пользователя 10 чисел и
+                            подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать,
+                            сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной
+                            переменной (не 10) для ввода чисел пользователем.</p>
+                        <button onclick="tenNumbers()" class="btn btn-primary mb-2">Start</button>
+                        <div id="countn" class="p-2" style="height: 60px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Зациклить калькулятор. Запросить у
+                            пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить
+                            еще один пример. И так до тех пор, пока пользователь не откажется.</p>
+                        <input type="text" id="num-1" class="mb-2">
+                        <input type="text" id="symb" class="mb-2" placeholder=" + - / *" style="display: block;">
+                        <!-- <div class="symbols">
+                            <button id="pl" class="symbol" onclick="symb='+'">+</button>
+                            <button id="min" class="symbol" onclick="symb='-'">-</button>
+                            <button id="mult" class="symbol" onclick="symb='*'">x</button>
+                            <button id="div" class="symbol" onclick="symb='/'">/</button>
+                        </div> -->
+                        <input type="text" id="num-2" class="mb-2">
+                        <button onclick="calculator()" class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="rslt" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Some quick example text to build on
+                            the
+                            card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Some quick example text to build on
+                            the
+                            card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Some quick example text to build on
+                            the
+                            card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -98,13 +98,13 @@ function tenNumbers() {
 
 function calculator(){
     debugger;
-    
+    let next; 
     do{   
         let num_1 = +document.getElementById("num-1").value;
         let num_2 = +document.getElementById("num-2").value;
         let res;
         let symb = document.getElementById("symb").value;
-        let next;   
+          
             switch (symb) {
                 case '+':
                     res = num_1 + num_2;

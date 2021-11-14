@@ -110,13 +110,15 @@ function tenNumbers() {
 
 function calculator() {
   debugger;
-  var num_1 = +document.getElementById("num-1").value;
-  var num_2 = +document.getElementById("num-2").value;
-  var res;
-  var symb = document.getElementById("symb").value;
-  var next;
 
   do {
+    var num_1 = +document.getElementById("num-1").value;
+    var num_2 = +document.getElementById("num-2").value;
+    var res = void 0;
+    var symb = document.getElementById("symb").value;
+
+    var _next = void 0;
+
     switch (symb) {
       case '+':
         res = num_1 + num_2;
@@ -144,6 +146,6 @@ function calculator() {
     }
 
     document.getElementById("rslt").innerText = "".concat(res);
-    next = confirm('посчитать еще?');
+    _next = confirm('посчитать еще?');
   } while (next);
 }

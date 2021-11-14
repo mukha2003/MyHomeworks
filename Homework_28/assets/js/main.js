@@ -98,34 +98,35 @@ function tenNumbers() {
 
 function calculator(){
     debugger;
-    let num_1 = +document.getElementById("num-1").value;
-    let num_2 = +document.getElementById("num-2").value;
-    let res;
-    let symb = document.getElementById("symb").value;
-    let next;
-    do{      
-        switch (symb) {
-            case '+':
-                res = num_1 + num_2;
-                break;
-            case '-':
-                res = num_1 - num_2;
-                break;
-            case '*':
-                res = num_1 * num_2;
-                break;
-            case '/':
-                if(num_2!=0){
-                res = num_1 / num_2;
-                }else{
-                    res = '0';
-                }
-                break;    
-            default:
-                res = 'выбери действие';     
+    
+    do{   
+        let num_1 = +document.getElementById("num-1").value;
+        let num_2 = +document.getElementById("num-2").value;
+        let res;
+        let symb = document.getElementById("symb").value;
+        let next;   
+            switch (symb) {
+                case '+':
+                    res = num_1 + num_2;
+                    break;
+                case '-':
+                    res = num_1 - num_2;
+                    break;
+                case '*':
+                    res = num_1 * num_2;
+                    break;
+                case '/':
+                    if(num_2!=0){
+                    res = num_1 / num_2;
+                    }else{
+                        res = '0';
+                    }
+                    break;    
+                default:
+                    res = 'выбери действие';     
+            }
+            document.getElementById("rslt").innerText = `${res}`;
+            next = confirm('посчитать еще?');
         }
-        document.getElementById("rslt").innerText = `${res}`;
-        next = confirm('посчитать еще?');
-    }
-    while(next);  
+        while(next);  
 }

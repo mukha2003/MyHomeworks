@@ -115,7 +115,7 @@ function calculator() {
   do {
     var num_1 = +document.getElementById("num-1").value;
     var num_2 = +document.getElementById("num-2").value;
-    var res = void 0;
+    var res = '';
     var symb = document.getElementById("symb").value;
 
     switch (symb) {

@@ -90,6 +90,99 @@
                         <div id="total" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
                     </div>
                 </div>
+                <div class="card col-6 col-md-4">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #ccc;">Написать конвертор валют. Пользователь
+                            вводит количество USD, выбирает, в какую валюту хочет перевести EUR, UAN или AZN, и получает
+                            в ответ соответствующую сумму.</p>
+                        <label for="hrn" class="me-4 form-label">Введи колличество USD </label>
+                        <input type="text" name="number" id="hrn" class="mb-2 form-control">
+                        <select class="form-select mb-2" name="currency" id="curr">
+                            <option value="27.2">UAH</option>
+                            <option value="0.88">EUR</option>
+                            <option value="0.59">AZN</option>
+                        </select>
+
+                        <button onclick="convertCurr()" class="btn btn-primary mb-3">Вычислить</button>
+                        <div id="rez" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="card col-6 col-md-4">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #ccc;">Запросить у пользователя сумму покупки
+                            и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от
+                            500 и выше – 7%.</p>
+                        <label for="pal-num" class="me-4 form-label">Введи общую сумму покупки</label>
+                        <input type="text" name="number" id="sum" class="mb-2 form-control">
+                        <button onclick="getDiscount()" class="btn btn-primary mb-3">Вычислить</button>
+                        <div id="disc" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #ccc;">Запросить у пользователя длину
+                            окружности и периметр квадрата. Определить, может ли такая окружность поместиться в
+                            указанный квадрат.</p>
+                        <label for="circle" class="me-4 form-label">Введи длинну окружности</label>
+                        <input type="text" name="circle" id="circle" class="mb-2 form-control">
+                        <label for="square" class="me-4 form-label">Введи периметр квадрата</label>
+                        <input type="text" name="number" id="square" class="mb-2 form-control">
+
+                        <button onclick="circulSquare()" class="btn btn-primary mb-3">Вычислить</button>
+                        <div id="match" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="card col-6 col-md-4">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #ccc;">Задать пользователю 3 вопроса, в каждом
+                            вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов
+                            выведите пользователю количество набранных баллов.</p>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="q_1">
+                            <option value="0" selected>Сколько сторон у квадрата?</option>
+                            <option value="0">2</option>
+                            <option value="2">4</option>
+                            <option value="0">3</option>
+                        </select>
+
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="q_2">
+                            <option value="0" selected>Столица Украины</option>
+                            <option value="0">
+                                Львов
+                            </option>
+                            <option value="0">Николаев</option>
+                            <option value="2">Киев</option>
+                        </select>
+
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="q_3">
+                            <option value="0" selected>Какой из этих месяцев летний</option>
+                            <option value="0">Март</option>
+                            <option value="2">Август</option>
+                            <option value="0">февраль</option>
+                        </select>
+                        <button onclick="myQuiz()" class="btn btn-primary mb-3">Вычислить</button>
+                        <div id="quiz" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #ccc;">Запросить дату (день, месяц, год) и
+                            вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также
+                            високосный год.</p>
+                        <label for="day" class="me-4 form-label">День</label>
+                        <input type="text" name="circle" id="day" class="mb-2 form-control">
+                        <label for="month" class="me-4 form-label">Месяц</label>
+                        <input type="text" name="number" id="month" class="mb-2 form-control">
+                        <label for="year" class="me-4 form-label">Год</label>
+                        <input type="text" name="number" id="yr" class="mb-2 form-control">
+
+                        <button onclick="nextDate()" class="btn btn-primary mb-3">Вычислить</button>
+                        <div id="next_date" class="p-2" style="min-height: 40px; background-color: #ccc;"></div>
+                    </div>
+                </div>
             </div>
 
         </div>

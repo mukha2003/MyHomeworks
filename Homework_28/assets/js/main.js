@@ -102,7 +102,7 @@ function calculator(){
     do{   
         let num_1 = +document.getElementById("num-1").value;
         let num_2 = +document.getElementById("num-2").value;
-        let res;
+        let res = '';
         let symb = document.getElementById("symb").value;
           
             switch (symb) {

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">Написать функцию, которая
+                            принимает 2
+                            числа и возвращает -1, если первое
+                            меньше, чем второе; 1 – если первое больше, чем второе; и 0 – если числа равны.</div>
+                        <input class="mb-2" type="number" id="num_1" value="1">
+                        <input class="mb-2" type="number" id="num_2" value="1">
+                        <button class="btn btn-info mb-2" type="button"
+                            onclick="calcNum('num_1', 'num_2', 'result')">PUSH</button>
+                        <div class="p-2" id="result" style="background-color: darkgray; height: 50px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text p-2 mb-2" style="background-color: #f0a4d7;">
+                            Написать функцию, которая вычисляет факториал переданного ей числа.</div>
+                        <input class="mb-2" type="number" id="num" value="1">
+                        <button class="btn btn-info mb-2" type="button" onclick="getFactorial('num','resu')">PUSH
+
+                        </button>
+                        <div class="p-2" id="resu" style="background-color: darkgray; height: 50px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <!-- <div class="card-body">
+                        <div class="card-text p-2 mb-2" style="background-color: #f0a4d7;">
+                            Написать функцию, которая вычисляет факториал переданного ей числа.</div>
+                        <input class="mb-2" type="number" id="num" value="1">
+                        <button class="btn btn-info mb-2" type="button" onclick="getFactorial('num','resu')">PUSH
+
+                        </button>
+                        <div class="p-2" id="resu" style="background-color: darkgray; height: 50px;">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text p-2 mb-2" style="background-color: #f0a4d7;">
+                                Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его
+                                площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.</div>
+                            <input class="mb-2" type="number" id="side_1" value="1">
+                            <input class="mb-2" type="number" id="side_2" value="1">
+                            <button class="btn btn-info mb-2" type="button"
+                                onclick="calcArea('side_1', 'side_2', 'area')">
+                                PUSH
+                            </button>
+                            <div class="p-2" id="area" style="background-color: darkgray; height: 50px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text p-2 mb-2" style="background-color: #f0a4d7;">
+                                Написать функцию, которая проверяет, является ли переданное ей число совершенным.
+                                Совершенное число – это число, равное сумме всех своих собственных делителей.</div>
+                            <input class="mb-2" type="number" id="num-p" value="1">
+                            <button class="btn btn-info mb-2" type="button"
+                                onclick="isPerfectNumber('num-p','res-p')">PUSH
+
+                            </button>
+                            <div class="p-2" id="res-p" style="background-color: darkgray; height: 50px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">Написать функцию, которая
+                                принимает минимальное и максимальное значения для диапазона, и выводит только те числа
+                                из диапазона, которые являются совершенными.</div>
+                            <label for="min" class="mb-2">Введи число от:</label>
+                            <input class="mb-2" type="number" id="min" value="1">
+                            <label for="max" class="mb-2">Введи число до:</label>
+                            <input class="mb-2" type="number" id="max" value="1">
+                            <button class="btn btn-info mb-2" type="button"
+                                onclick="makePerfectLine('min', 'max', 'minmax')">PUSH</button>
+                            <div class="p-2" id="minmax" style="background-color: darkgray; height: 50px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">
+                                Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран
+                                в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то
+                                выводить их как 00.
+                            </div>
+                            <label for="hour" class="mb-2">Часы</label>
+                            <input type="number" id="hour" class="mb-2">
+                            <br>
+                            <label for="mins" class="mb-2">Минуты</label>
+                            <input type="number" id="mins" class="mb-2">
+                            <br>
+                            <label for="sek" class="mb-2">Секунды</label>
+                            <input type="number" id="sek" class="mb-2">
+                            <br>
+
+                            <button class="btn btn-info mb-2" type="button"
+                                onclick="showTime('hour','mins','sek','time')">PUSH</button>
+                            <div class="p-2" id="time" style="background-color: darkgray; height: 50px;"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">
+                                Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран
+                                в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то
+                                выводить их как 00.
+                            </div>
+                            <label for="hr" class="mb-2">Часы</label>
+                            <input type="number" id="hr" class="mb-2">
+                            <br>
+                            <label for="ms" class="mb-2">Минуты</label>
+                            <input type="number" id="ms" class="mb-2">
+                            <br>
+                            <label for="sk" class="mb-2">Секунды</label>
+                            <input type="number" id="sk" class="mb-2">
+                            <br>
+
+                            <button class="btn btn-info mb-2" type="button"
+                                onclick="transformToSec('hr','ms','sk','sek_time')">PUSH</button>
+                            <div class="p-2" id="sek_time" style="background-color: darkgray; height: 50px;"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -88,7 +88,7 @@ function tenNumbers() {
             count_null++;
         }
 
-        document.getElementById("countn").innerText = `Четных: ${count_even} нечетных: ${count_odd} положительных: ${count_pos} отрицательных: ${count_neg} нулей: ${count_null}`;
+        document.getElementById("countn").innerText = `Четных: ${count_even}, нечетных: ${count_odd}, положительных: ${count_pos}, отрицательных: ${count_neg}, нулей: ${count_null}`;
     }
 }
 

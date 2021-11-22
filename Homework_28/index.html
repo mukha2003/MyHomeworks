@@ -87,17 +87,7 @@
                         <p class="card-text p-2" style="background-color: #a4bff3;">Зациклить калькулятор. Запросить у
                             пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить
                             еще один пример. И так до тех пор, пока пользователь не откажется.</p>
-                        <input type="text" id="num-1" class="mb-2">
-                        <input type="text" id="symb" class="mb-2" placeholder=" + - / *" style="display: block;">
-                        <!-- <div class="symbols">
-                            <button id="pl" class="symbol" onclick="symb='+'">+</button>
-                            <button id="min" class="symbol" onclick="symb='-'">-</button>
-                            <button id="mult" class="symbol" onclick="symb='*'">x</button>
-                            <button id="div" class="symbol" onclick="symb='/'">/</button>
-                        </div> -->
-                        <input type="text" id="num-2" class="mb-2">
-                        <button onclick="calculator()" class="btn btn-primary mb-2">Вычислить</button>
-                        <div id="rslt" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                        <button onclick="calculator_1()" class="btn btn-primary mb-2">Вычислить</button>
                     </div>
                 </div>
             </div>
@@ -107,36 +97,49 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text p-2" style="background-color: #a4bff3;">Some quick example text to build on
-                            the
-                            card title and make up the bulk of
-                            the card's content.</p>
-                        <button class="btn btn-primary mb-2">Вычислить</button>
-                        <div id="" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Запросить у пользователя число и на
+                            сколько цифр его сдвинуть. Сдвинуть цифры числа и вывести результат (если число 123456
+                            сдвинуть на 2 цифры, то получится 345612).</p>
+                        <label for="numb">Введи число </label>
+                        <input type="text" id="numb" class="mb-2">
+                        <label for="sh">Введи на сколько сдвинуть</label>
+                        <input type="text" id="sh" class="mb-2">
+                        <button onclick="shiftMe()" class="btn btn-primary mb-2">Вычислить</button>
+                        <div id="summ" class="p-2" style="height: 40px;background-color:#ccc;"></div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text p-2" style="background-color: #a4bff3;">Some quick example text to build on
-                            the
-                            card title and make up the bulk of
-                            the card's content.</p>
-                        <button class="btn btn-primary mb-2">Вычислить</button>
-                        <div id="" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Зациклить вывод дней недели таким
+                            образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь
+                            нажимает OK.</p>
+                        <button onclick="weekDays()" class="btn btn-primary mb-2">Вычислить</button>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text p-2" style="background-color: #a4bff3;">Some quick example text to build on
-                            the
-                            card title and make up the bulk of
-                            the card's content.</p>
-                        <button class="btn btn-primary mb-2">Вычислить</button>
-                        <div id="" class="p-2" style="height: 40px;background-color:#ccc;"></div>
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Загадай число от 0 до 100
+                        </p>
+                        <button onclick="numberGame()" class="btn btn-primary mb-2">ЖМИ</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-2" style="background-color: #a4bff3;">Вывести таблицу умножения для всех
+                            чисел от 2 до 9. Каждое число необходимо умножить на числа от 1 до 10.</p>
+                        <button onclick="multiplTable()" class="btn btn-primary mb-2">Вывести таблицу умножения</button>
+                        <button onclick="multTable()" class="btn btn-primary mb-2">Вывести таблицу умножения
+                            таблицей</button>
+                        <div id="mult" class="p-2" style="background-color:#ccc;"></div>
                     </div>
                 </div>
             </div>

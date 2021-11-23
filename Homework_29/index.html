@@ -43,16 +43,20 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <!-- <div class="card-body">
-                        <div class="card-text p-2 mb-2" style="background-color: #f0a4d7;">
-                            Написать функцию, которая вычисляет факториал переданного ей числа.</div>
-                        <input class="mb-2" type="number" id="num" value="1">
-                        <button class="btn btn-info mb-2" type="button" onclick="getFactorial('num','resu')">PUSH
-
-                        </button>
-                        <div class="p-2" id="resu" style="background-color: darkgray; height: 50px;">
-                        </div>
-                    </div> -->
+                    <div class="card-body">
+                        <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">Написать функцию, которая
+                            принимает три отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9
+                            превратятся в число 149.</div>
+                        <label for="n_1" class="mb-2">Введи цифру от 0 до 9</label>
+                        <input class="mb-2" type="number" id="n_1" value="1">
+                        <label for="n_2" class="mb-2">Введи цифру от 0 до 9</label>
+                        <input class="mb-2" type="number" id="n_2" value="1">
+                        <label for="n_3" class="mb-2">Введи цифру от 0 до 9</label>
+                        <input class="mb-2" type="number" id="n_3" value="1">
+                        <button class="btn btn-info mb-2" type="button"
+                            onclick="makeMagicNums('n_1','n_2','n_3','magic')">PUSH</button>
+                        <div class="p-2" id="magic" style="background-color: darkgray; height: 50px;"></div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -137,9 +141,8 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">
-                                Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран
-                                в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то
-                                выводить их как 00.
+                                Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в
+                                секундах.
                             </div>
                             <label for="hr" class="mb-2">Часы</label>
                             <input type="number" id="hr" class="mb-2">
@@ -155,8 +158,61 @@
                                 onclick="transformToSec('hr','ms','sk','sek_time')">PUSH</button>
                             <div class="p-2" id="sek_time" style="background-color: darkgray; height: 50px;"></div>
                         </div>
-
                     </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">
+                                Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и
+                                секунды и возвращает в виде строки «чч:мм:сс».
+                            </div>
+                            <label for="to_time" class="mb-2">Секунды</label>
+                            <input type="number" id="to_time" class="mb-2">
+                            <button class="btn btn-info mb-2" type="button"
+                                onclick="makeSecToTime('to_time','h_time')">PUSH</button>
+                            <div class="p-2" id="h_time" style="background-color: darkgray; height: 50px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text p-2 mb-2" style="background-color: #f3abdb;">
+                            Написать функцию, которая считает разницу между датами. Функция принимает 6 параметров,
+                            которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». При выполнении
+                            задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в
+                            секунды, узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс»
+                        </div>
+                        <h5>Введи первую дату</h5>
+                        <label for="hour_1" class="mb-2">Часы</label>
+                        <input type="number" id="hour_1" class="mb-2">
+                        <br>
+                        <label for="min_1" class="mb-2">Минуты</label>
+                        <input type="number" id="min_1" class="mb-2">
+                        <br>
+                        <label for="sek_1" class="mb-2">Секунды</label>
+                        <input type="number" id="sek_1" class="mb-2">
+                        <br>
+                        <h5>Введи вторую дату</h5>
+                        <label for="hour_2" class="mb-2">Часы</label>
+                        <input type="number" id="hour_2" class="mb-2">
+                        <br>
+                        <label for="min_2" class="mb-2">Минуты</label>
+                        <input type="number" id="min_2" class="mb-2">
+                        <br>
+                        <label for="sek_2" class="mb-2">Секунды</label>
+                        <input type="number" id="sek_2" class="mb-2">
+                        <br>
+                        <button class="btn btn-info mb-2" type="button"
+                            onclick="compareTime('hour_1','min_1', 'sek_1', 'hour_2', 'min_2', 'sek_2', 'time_1')">PUSH</button>
+                        <div class="p-2" id="time_1" style="background-color: darkgray; height: 50px;"></div>
+                    </div>
+
                 </div>
             </div>
         </div>

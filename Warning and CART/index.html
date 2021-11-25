@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/panel/panel.min.css">
+    <link rel="stylesheet" href="assets/styles/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add product to cart</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="Enter product title"
+                                    id="prod_name">
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="form-control" placeholder="Qty" min="1" value="1"
+                                    id="prod_qty">
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="form-control" placeholder="Price" min="0" id="prod_price">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-end">
+                        <button class="btn btn-info" onclick="checkAndAddProduct()">Add</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>CART</h4>
+
+                    </div>
+                    <div class="card-body">
+                        <ul id="cart_list"></ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header  d-flex justify-content-between">
+                        <h4>Bill</h4>
+                        <button onclick="showTotalBill()" class="btn btn-primary">Print</button>
+                    </div>
+                    <div class="card-body" id="bill">
+
+                    </div>
+                    <div class="card-footer" id="bill_foot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/plugins/panel/panel.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

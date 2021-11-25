@@ -72,11 +72,12 @@ function showTotalBill(){
     let billTotal = 0;
     let tableBill = '<table>';
     for(let i=0; i<CART.length;i++){
-        tableBill +='<tr>';
-        tableBill += `<td>${CART[i].name}</td>`;
-        tableBill +=`<td>${CART[i].price} &times; ${CART[i].qty}</td>`;
-        tableBill +=`<td>${CART[i].total}</td>`;
-        tableBill +='</tr>';
+        tableBill +=`
+        <tr>
+            <td>${CART[i].name}</td>
+            <td>${CART[i].price} &times; ${CART[i].qty}</td>
+            <td>${CART[i].total}</td>
+        </tr>`;
         billTotal += CART[i].total;
     }
     document.getElementById('bill').innerHTML = tableBill + '</table>';

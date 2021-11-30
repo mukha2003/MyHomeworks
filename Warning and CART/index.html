@@ -38,13 +38,44 @@
                         <button class="btn btn-info" onclick="checkAndAddProduct()">Add</button>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">
+                <div class="card mt-4">
+                    <div class="card-header d-flex justify-content-between">
                         <h4>CART</h4>
+                        <button onclick="changeSort()" class="btn btn-primary">Sort</button>
 
                     </div>
                     <div class="card-body">
-                        <ul id="cart_list"></ul>
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+                                    <td class="text-center">Name</td>
+                                    <td class="text-center">Buy</td>
+                                    <td class="text-end">Price</td>
+                                    <td class="text-center">Qty</td>
+                                    <td class="text-end">Total</td>
+                                    <td class="text-center">Actions</td>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4"><b>Total bought</b></td>
+                                    <td class="text-end"><span id="total_bought"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>Total not bought</b></td>
+                                    <td class="text-end"><span id="total_notbought"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>Total</b></td>
+                                    <td class="text-end"><span id="total"></span></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                            <tbody id="cart_list"></tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -53,13 +84,28 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-header  d-flex justify-content-between">
-                        <h4>Bill</h4>
+                        <h4 class="me-4">Bill</h4>
+
                         <button onclick="showTotalBill()" class="btn btn-primary">Print</button>
                     </div>
                     <div class="card-body" id="bill">
-
                     </div>
-                    <div class="card-footer" id="bill_foot"></div>
+                    <div class="card-footer">
+                        <div id="bill_foot" class="mb-1"></div>
+                        <div id="pdv" class="mb-4 font-monospace"></div>
+                        <div class="d-flex justify-content-between mb-2">
+
+                            <input type="number" class="form-control me-4" placeholder="value" id="disc_val">
+                            <select class="form-select form-select-sm me-4" name="" id="disc">
+                                <option value="0" selected>none</option>
+                                <option value="1">Percent</option>
+                                <option value="2">Fixed</option>
+                            </select>
+                            <button class="btn btn-info" onclick="calcDiscount()">Discount</button>
+                        </div>
+                        <div id="disc_total" class="font-monospace"></div>
+                        <div id="total_d" class="font-monospace"></div>
+                    </div>
                 </div>
             </div>
         </div>

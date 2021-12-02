@@ -201,7 +201,6 @@ function showTotalBill(){
     }  
     document.getElementById('bill').innerHTML = tableBill + '</table>';
 
-
     let bill_disc = 0;
     let disc = +document.getElementById("disc_val").value;
     let disc_id = document.getElementById("disc").value;

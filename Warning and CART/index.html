@@ -85,26 +85,24 @@
                 <div class="card">
                     <div class="card-header  d-flex justify-content-between">
                         <h4 class="me-4">Bill</h4>
-
-                        <button onclick="showTotalBill()" class="btn btn-primary">Print</button>
-                    </div>
-                    <div class="card-body" id="bill">
-                    </div>
-                    <div class="card-footer">
-                        <div id="bill_foot" class="mb-1"></div>
-                        <div id="pdv" class="mb-4 font-monospace"></div>
                         <div class="d-flex justify-content-between mb-2">
-
                             <input type="number" class="form-control me-4" placeholder="value" id="disc_val">
                             <select class="form-select form-select-sm me-4" name="" id="disc">
                                 <option value="0" selected>none</option>
                                 <option value="1">Percent</option>
                                 <option value="2">Fixed</option>
                             </select>
-                            <button class="btn btn-info" onclick="calcDiscount()">Discount</button>
+                            <button id="total_btn" class="btn btn-primary">Print</button>
                         </div>
-                        <div id="disc_total" class="font-monospace"></div>
-                        <div id="total_d" class="font-monospace"></div>
+
+                    </div>
+                    <div class="card-body" id="bill">
+                    </div>
+                    <div class="card-footer cart_style">
+                        <div id="bill_foot">Total no discount</div>
+                        <div id="pdv" class="ont-monospace">pdv 20%</div>
+                        <div id="disc_total" class="font-monospace mb-1">Discount</div>
+                        <div id="total_d" class="font-monospace"><b>TOTAL</b></div>
                     </div>
                 </div>
             </div>

@@ -82,6 +82,12 @@ const productRow = (item, i) => {
             `;
 }
 
+
+
+
+
+
+
 function shoppingList(){
     let cart_html = '';
     let total = CART.reduce(
@@ -178,44 +184,66 @@ const buyProduct = (ind) => {
     }
 }
 
-function showTotalBill(){
-  
+
+
+
+function showTotalBill(){  
     let billTotal = 0;
     let tableBill = '<table class="font-monospace">';
     for(let i=0; i<CART.length;i++){
         tableBill +=`
         <tr>
             <td>${CART[i].name}</td>
-            <td>${CART[i].price} &times; ${CART[i].qty}</td>
+            <td class="text-end">${CART[i].price} &times; ${CART[i].qty}</td>
             <td class="text-end">${CART[i].total}</td>
         </tr>`;
         billTotal += CART[i].total;
-    }
-    let pdv = billTotal*20/100;
+    }  
     document.getElementById('bill').innerHTML = tableBill + '</table>';
-    document.getElementById("bill_foot").innerHTML = `TOTAL : ${billTotal.toFixed(2)}`;
-    document.getElementById("pdv").innerHTML = `PDV 20% : ${pdv.toFixed(2)}`
-}
 
-function calcDiscount(){
-    let billTotal = CART.reduce(
-        (accumPrice, cartItem) => {
-        return accumPrice + cartItem.total},//первый параметр
-        0);//второй параметр
+
     let bill_disc = 0;
     let disc = +document.getElementById("disc_val").value;
     let disc_id = document.getElementById("disc").value;
     if(disc_id == 1){
-        bill_disc = (billTotal * disc / 100).toFixed(2); 
-        
+        bill_disc = (billTotal * disc / 100).toFixed(2);        
     }
     if(disc_id == 2){
         bill_disc = disc.toFixed(2);
     }
     let total_d = billTotal-bill_disc
     document.getElementById("disc_total").innerHTML = `Discount : ${bill_disc}`;
-    document.getElementById("total_d").innerHTML = `<b>Total with discount : ${total_d.toFixed(2)}</b>`
+    document.getElementById("total_d").innerHTML = `<b>TOTAL TO PAY : ${total_d.toFixed(2)}</b>`
+    document.getElementById("bill_foot").innerHTML = `Total sum : ${billTotal.toFixed(2)}`;
+    document.getElementById("pdv").innerHTML = `PDV 20% : ${(billTotal*20/100).toFixed(2)}`;
 }
+
+// function calcDiscount(){
+//     let billTotal = CART.reduce(
+//         (accumPrice, cartItem) => {
+//         return accumPrice + cartItem.total},//первый параметр
+//         0);//второй параметр
+//     let bill_disc = 0;
+//     let disc = +document.getElementById("disc_val").value;
+//     let disc_id = document.getElementById("disc").value;
+//     if(disc_id == 1){
+//         bill_disc = (billTotal * disc / 100).toFixed(2); 
+        
+//     }
+//     if(disc_id == 2){
+//         bill_disc = disc.toFixed(2);
+//     }
+//     let total_d = billTotal-bill_disc
+//     document.getElementById("disc_total").innerHTML = `Discount : ${bill_disc}`;
+//     document.getElementById("total_d").innerHTML = `<b>TOTAL : ${total_d.toFixed(2)}</b>`
+// }
+
+document.querySelector("#total_btn").onclick = function(){
+    showTotalBill();
+    // calcDiscount();
+}
+
+
 
 
 

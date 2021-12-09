@@ -23,6 +23,13 @@ class Circle{
         document.getElementById('circle').append(div);
     }
 
+    /**
+     * @param {number} new_radius
+     */
+    set setRadius(new_radius){
+        this.radius = new_radius;
+    }
+
     get circleRadius(){
         return this.radius;
     }
@@ -40,26 +47,26 @@ class Circle{
 }
 
 function chowCircle(){ 
+    document.getElementById('circle').innerHTML = '';
     let r = +document.getElementById('rad').value;      
     let circle2 = new Circle(r);
     circle2.draw();   
-    printInfo();
+    printInfo(circle2);
     document.getElementById('rad').value = ""; 
 }
 
-function printInfo (){
-    let r = +document.getElementById('rad').value; 
-    circle2 = new Circle(r);
+function printInfo (circle2){
     let circleInfo = {
         radius: circle2.circleRadius,
         diameter: circle2.circleDiameter,
         area: circle2._area(circle2.radius),
         width: circle2._circleWidth(circle2.radius)
     }
-        let html = '<ul>';
+    let html = '<ul>';
     for(let k in circleInfo){
-        html += `<li> ${k}: ${circleInfo[k]}`;
-        // html += '</ul>';
+        html += `<li> ${k}: ${circleInfo[k]}</li>`;
+        
         document.getElementById('info').innerHTML = html;
     }
+    html += '</ul>';
 }

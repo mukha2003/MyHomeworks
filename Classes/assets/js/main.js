@@ -70,3 +70,12 @@ function printInfo (circle2){
     }
     html += '</ul>';
 }
+
+const circleKey = document.getElementById('rad');
+
+circleKey.addEventListener('keyup', function(e){
+    console.log(e);
+    if(e.key=="Enter"){
+        chowCircle();
+    }
+  });

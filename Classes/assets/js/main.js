@@ -20,6 +20,7 @@ class Circle{
         div.style.height = this.radius * 2 +'px';
         div.style.backgroundColor = "orange";
         div.style.borderRadius = '50%';
+        document.getElementById('circle').innerHTML = '';
         document.getElementById('circle').append(div);
     }
 
@@ -47,7 +48,7 @@ class Circle{
 }
 
 function chowCircle(){ 
-    document.getElementById('circle').innerHTML = '';
+    
     let r = +document.getElementById('rad').value;      
     let circle2 = new Circle(r);
     circle2.draw();   
@@ -60,12 +61,11 @@ function printInfo (circle2){
         radius: circle2.circleRadius,
         diameter: circle2.circleDiameter,
         area: circle2._area(circle2.radius),
-        width: circle2._circleWidth(circle2.radius)
+        length: circle2._circleWidth(circle2.radius)
     }
     let html = '<ul>';
     for(let k in circleInfo){
-        html += `<li> ${k}: ${circleInfo[k]}</li>`;
-        
+        html += `<li> ${k}: ${circleInfo[k]}</li>`;        
         document.getElementById('info').innerHTML = html;
     }
     html += '</ul>';
@@ -74,7 +74,6 @@ function printInfo (circle2){
 const circleKey = document.getElementById('rad');
 
 circleKey.addEventListener('keyup', function(e){
-    console.log(e);
     if(e.key=="Enter"){
         chowCircle();
     }

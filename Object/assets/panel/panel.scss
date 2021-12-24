@@ -1,0 +1,45 @@
+
+#panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    background-color: rgba(123,123,123,.7);
+    padding: 20px 50px;
+    font-size: 18px;
+    z-index: 10000;
+    &.info {
+        background-color: rgba(11, 182, 244, 0.7);
+    }
+    &.success {
+        background-color: rgba(95, 248, 7, 0.7);
+    }
+    &.warning {
+        background-color: rgba(255, 153, 0, 0.842);
+    }
+    &.danger {
+        background-color: rgba(252, 7, 7, 0.753);
+    }
+    button {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 600;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        &:hover {
+            color: red;
+        }
+
+    }    
+}
+

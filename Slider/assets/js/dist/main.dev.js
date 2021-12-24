@@ -28,4 +28,38 @@ $(function () {
       }
     }]
   });
+  $("#light_slider").lightSlider({
+    item: 4,
+    pager: false,
+    responsive: [{
+      breakpoint: 950,
+      settings: {
+        item: 3
+      }
+    }, {
+      breakpoint: 620,
+      settings: {
+        item: 3
+      }
+    }],
+    onSliderLoad: function onSliderLoad(el) {
+      var showActiveSlides = function showActiveSlides(entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.src = entry.target.dataset.src;
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      var imageWidth = el.find("li").outerWidth() + "px";
+      var observer = new window.IntersectionObserver(showActiveSlides, {
+        root: el.parent()[0],
+        rootMargin: "0px " + imageWidth + " 0px " + imageWidth
+      });
+      el.find("li img").each(function () {
+        observer.observe(this);
+      });
+    }
+  });
 });

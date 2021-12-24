@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="assets/plugins/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/responsive.min.css">
 
@@ -15,18 +15,18 @@
 <body>
     <header class="lazy-bg" data-src="assets/images/hero-bg.png">
         <div class="header-content">
-            <div class="header-content__logo">
+            <div class="header-content__logo wow animate__animated animate__fadeInLeft">
                 <a href="#">
                     <svg>
                         <use xlink:href="assets/images/icons/sprite.svg#main-logo"></use>
                     </svg>
                 </a>
             </div>
-            <h1 class="header-content__title">
+            <h1 class="header-content__title wow animate__animated animate__fadeInRight">
                 WORKING <br>
                 WITH design LAB
             </h1>
-            <p class="header-content__descr">
+            <p class="header-content__descr wow animate__animated animate__fadeInLeft">
                 We’ve been helping startups launch and grow their businesses. We help you to fill the gap between
                 development,
                 design and product management.
@@ -36,7 +36,7 @@
 
     <main>
         <section class="about container">
-            <div class="about-content content-padding">
+            <div class="about-content content-padding  wow animate__animated animate__fadeInLeft">
                 <h2 class="about-content__title main-title">
                     ABOUT US
                 </h2>
@@ -55,8 +55,8 @@
             </div>
         </section>
 
-        <section class="services lazy-bg" data-src="assets/images/services.png">
-            <div class="services-content content-padding container">
+        <section class="services lazy-bg wow" data-src="assets/images/services.png">
+            <div class="services-content content-padding container wow animate__animated animate__fadeInRight">
                 <h2 class="services-content__title main-title">
                     SERVICES
                 </h2>
@@ -79,7 +79,7 @@
                 </h2>
                 <ul class="content-card">
                     <li class="content-card__item">
-                        <div class="content-card__logo">
+                        <div class="content-card__logo wow animate__animated animate__flipInX">
                             <svg>
                                 <use xlink:href="assets/images/icons/sprite.svg#design-logo"></use>
                             </svg>
@@ -96,7 +96,7 @@
                     </li>
 
                     <li class="content-card__item">
-                        <div class="content-card__logo">
+                        <div class="content-card__logo wow animate__animated animate__flipInX">
                             <svg>
                                 <use xlink:href="assets/images/icons/sprite.svg#development-logo"></use>
                             </svg>
@@ -112,7 +112,7 @@
                     </li>
 
                     <li class="content-card__item">
-                        <div class="content-card__logo">
+                        <div class="content-card__logo wow animate__animated animate__flipInX">
                             <svg>
                                 <use xlink:href="assets/images/icons/sprite.svg#product-logo"></use>
                             </svg>
@@ -134,37 +134,43 @@
         <section class="gallery">
             <div class="gallery-content">
                 <div class="gallery-content__wrap">
-                    <div class="gallery-content__card--small gallery-content__card">
+                    <div
+                        class="gallery-content__card--small gallery-content__card wow animate__animated animate__fadeInRight">
                         <img class="lazy"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                             data-src="assets/images/topworks.png" alt="">
                         <div class="gallery-content__title">topworkz</div>
                     </div>
-                    <div class="gallery-content__card--big gallery-content__card">
+                    <div
+                        class="gallery-content__card--big gallery-content__card wow animate__animated animate__fadeInUp">
                         <img class="lazy"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                             data-src="assets/images/joint.png" alt="">
                         <div class="gallery-content__title">joint</div>
                     </div>
-                    <div class="gallery-content__card--small gallery-content__card">
+                    <div
+                        class="gallery-content__card--small gallery-content__card wow animate__animated animate__fadeInLeft">
                         <img class="lazy"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                             data-src="assets/images/market.png" alt="">
                         <div class="gallery-content__title">market</div>
                     </div>
-                    <div class="gallery-content__card--small gallery-content__card">
+                    <div
+                        class="gallery-content__card--small gallery-content__card wow animate__animated animate__fadeInRight">
                         <img class="lazy"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                             data-src="assets/images/worktop.png" alt="">
                         <div class="gallery-content__title">worktop</div>
                     </div>
-                    <div class="gallery-content__card--big gallery-content__card">
+                    <div
+                        class="gallery-content__card--big gallery-content__card wow animate__animated animate__fadeInDown">
                         <img class="lazy"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                             data-src="assets/images/lable.png" alt="">
                         <div class="gallery-content__title">lable</div>
                     </div>
-                    <div class="gallery-content__card--small gallery-content__card">
+                    <div
+                        class="gallery-content__card--small gallery-content__card wow animate__animated animate__fadeInLeft">
                         <img class="lazy"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                             data-src="assets/images/kyiv.png" alt="">
@@ -184,27 +190,30 @@
                     requirements evolve.
                 </p>
 
-                <button class="contacts-content__btn">contact us</button>
+                <button class="contacts-content__btn wow animate__animated animate__shakeY">contact us</button>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer-content container">
             <div class="footer-content__wrap">
-                <div class="footer-content__logo">
+                <div class="footer-content__logo wow animate__animated animate__fadeInLeft">
                     <svg>
                         <use xlink:href="assets/images/icons/sprite.svg#footer-logo"></use>
                     </svg>
                 </div>
-                <div class="footer-content__copyright">
+                <div class="footer-content__copyright wow animate__animated animate__fadeInRight">
                     &copy; 2014. All Rights Reserved <a href="#">Ellipsis.com</a>
                 </div>
 
             </div>
         </div>
     </footer>
-
+    <script src="assets/plugins/wow.min.js"></script>
     <script src="assets/js/lazyload.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

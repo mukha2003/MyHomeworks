@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+dl{
+    margin: 20px 0;
+    dt{
+        font-weight: bold;
+    }
+
+    dd{
+        margin-left: 120px;
+    }
+}
+
+input {
+    height: 30px;
+    padding-left: 10px;
+    margin: 10px;
+}
+button {
+    padding: 5px;
+}

@@ -34,13 +34,7 @@ var playList = [{
 }];
 var list = document.createElement('ol');
 list.classList.add("list-group", "list-group-numbered", "p-4");
-container.appendChild(list); // playList.forEach( item => {
-//     let listItem = document.createElement("li");
-//     listItem.classList.add("list-group-item","list-group-item-primary");
-//     listItem.innerText = `${item.author} : ${item.song}`;
-//     list.appendChild(listItem);
-// });
-
+container.appendChild(list);
 playList.forEach(function (item) {
   var listItem = document.createElement("li");
   listItem.classList.add("list-group-item", "list-group-item-primary", "col-4");
@@ -79,44 +73,61 @@ button.classList.add('btn', 'btn-info');
 button.setAttribute("type", "button");
 button.innerText = "Push for modal";
 container.appendChild(button);
+button.onclick = modalWindow;
 setStyle(button, {
   position: 'absolute',
   top: '100px',
   right: '200px'
 });
-var modal = document.createElement('div');
-modal.classList.add('window', 'close');
-var modal_header = document.createElement('div');
-modal_header.classList.add('d-flex', 'justify-content-between', 'p-3', 'align-items-center');
-modal.appendChild(modal_header);
-var modal_title = document.createElement('h3');
-modal_title.innerText = "Modal window";
-modal_header.appendChild(modal_title);
-var modal_close = document.createElement('span');
-modal_close.innerHTML = '&times';
-modal_close.style.fontSize = '40px';
-modal_close.style.cursor = 'pointer';
-modal_header.appendChild(modal_close);
-container.appendChild(modal);
-button.onclick = openMod;
-modal_close.onclick = closeMod;
 
-function closeMod() {
-  modal.classList.add('close');
+function modalWindow() {
+  var overlay = document.createElement('div');
+  setStyle(overlay, {
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,.7)',
+    zIndex: '9999',
+    position: 'fixed',
+    top: '0px',
+    left: '0px'
+  });
+  var modal = document.createElement('div');
+  modal.classList.add('window', 'close');
+  var modal_header = document.createElement('div');
+  modal_header.classList.add('d-flex', 'justify-content-between', 'p-3', 'align-items-center');
+  modal.appendChild(modal_header);
+  var modal_title = document.createElement('h3');
+  modal_title.innerText = "Modal window";
+  modal_header.appendChild(modal_title);
+  var btnClose = document.createElement('button');
+  btnClose.setAttribute('type', 'button');
+
+  btnClose.onclick = function () {
+    overlay.remove();
+  };
+
+  btnClose.innerHTML = '&times;';
+  setStyle(btnClose, {
+    width: '26px',
+    height: '26px',
+    border: 'none',
+    cursor: 'pointer',
+    background: 'none',
+    color: 'red',
+    fontSize: '20px',
+    fontWeight: '700'
+  });
+  container.appendChild(modal);
+  setStyle(modal, {
+    width: '500px',
+    height: '400px',
+    backgroundColor: '#fff',
+    borderRadius: '10px'
+  });
+  modal_header.append(btnClose);
+  overlay.append(modal);
+  document.body.append(overlay);
 }
-
-function openMod() {
-  modal.classList.add('blur');
-  modal.classList.remove('close');
-}
-
-setStyle(modal, {
-  width: '500px',
-  height: '400px',
-  backgroundColor: '#fff',
-  borderRadius: '10px',
-  position: 'fixed',
-  transform: 'translate(-50%,-50%)',
-  left: '50%',
-  top: '50%'
-});

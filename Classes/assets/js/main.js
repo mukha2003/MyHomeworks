@@ -47,8 +47,7 @@ class Circle{
     }
 }
 
-function chowCircle(){ 
-    
+function chowCircle(){     
     let r = +document.getElementById('rad').value;      
     let circle2 = new Circle(r);
     circle2.draw();   

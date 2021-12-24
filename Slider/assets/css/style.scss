@@ -47,7 +47,11 @@ body {
     margin: 0 auto;
     max-width: 1800px;
 }
+.slick {
+    width: 94%;
+    margin: 0 auto 40px;
 
+}
 .slider__subtitle {
     margin: 65px 0 31px;
     @include fz(18);
@@ -63,10 +67,7 @@ body {
     @include fz(86);
     text-align: center;
     line-height: 86px;
-    text-transform: uppercase;
- 
-   
-   
+    text-transform: uppercase;  
     &:before {
         content: url(../images/triangle.png);
         position: absolute;
@@ -80,17 +81,9 @@ body {
         top: 0;
         right: 25%;
         z-index: -1;
-
     }
 }
 
-
-
-.slick-prev:before,
-.slick-next:before {
-    color: #302d2d;
-    font-size: 30px;
-}
 
 .slick-slide {
     margin: 0 10px;
@@ -115,7 +108,6 @@ body {
         }
 }
 
-
 .slick__block {
 position: relative;
 overflow: hidden;
@@ -130,4 +122,56 @@ overflow: hidden;
     }
 }
 
+.slick-prev {
+    left: -85px;
+}
+.slick-prev,
+.slick-next {
+    top: 45%;
+}
 
+.slick-prev:before,
+.slick-next:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #302d2d;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1;
+    font-family: poppins;
+    opacity: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:after,
+.slick-next:after {
+    content: '';
+    position: absolute;    
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid #302d2d;
+    border-bottom: 1px solid #302d2d;
+
+}
+
+.slick-prev:after {
+    transform: rotate(45deg);
+    top: 145%;
+    left: 170%;
+}
+.slick-next:after {
+    transform: rotate(225deg);
+    top: 145%;
+    left: 120%;
+}
+
+.light {
+    width: 100%;
+}
